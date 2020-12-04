@@ -1,0 +1,22 @@
+input UpdateAvailabilityInput {
+    "Updated record`s ID"
+    id: ID!
+    "Availability status param"
+    available: Boolean!
+}
+
+
+input PricePeriod {
+    from: Int
+    to: Int
+}
+
+input AgePeriodInput {
+    from: Int
+    to: Int
+}
+
+input DatePeriod {
+    from: Date
+    to: Date
+}

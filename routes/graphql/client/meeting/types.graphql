@@ -1,0 +1,60 @@
+type Meeting {
+    "Meeting`s ID"
+    id: ID
+    "Meeting`s location latitude"
+    location_lat: Float
+    "Meeting`s location longitude"
+    location_lng: Float
+    "Meeting`s date"
+    meeting_date: IsoDateTime
+    "Meeting`s price"
+    price: Int
+    "Outfit value (from settings)"
+    outfit: Int
+    "Determine if deal must be safe"
+    safe_deal: Boolean
+    "Meeting`s status (from settings)"
+    status: Int
+    "Meeting`s address"
+    address: String
+    "Meeting`s confirmation code"
+    code: String
+    "Meeting`s user ID"
+    user_id: ID
+    "Meeting`s seller ID"
+    seller_id: ID
+    "Meeting`s updated date"
+    updated_at: Int! @timeDiff(abs: false) #IsoDateTime
+    "User who create meeting"
+    user: ListUser @belongsTo
+    "User who receive meeting request"
+    seller: ListUser @belongsTo
+    "Chosen charity organization"
+    charity_organization: Charity@belongsTo
+    "Meeting`s source"
+    inherited: Inherited @morphTo
+    "Meeting`s source type"
+    inherited_type: MEETINGS_INHERITED_TYPE
+    "Determine if authorized user`s review exist"
+    review_exists: Boolean
+}
+
+type MeetingsHistoryPayload {
+    results: [Meeting]
+    total(type: Int!, status: Int): Int @field(resolver: "App\\GraphQL\\Queries\\Meeting\\MeetingsHistory@getFilterTotal")
+}
+
+type UpcomingMeetingsPayload {
+    results: [Meeting]
+    total: Int @field(resolver: "App\\GraphQL\\Queries\\Meeting\\UpcomingMeetings@getTotal")
+}
+
+union Inherited @union(resolveType: "App\\GraphQL\\Unions\\MeetingInherited")
+    = GuestAuction
+    | GuestAdvert
+
+enum MEETINGS_INHERITED_TYPE {
+    AUCTION @enum(value: "auctions")
+    ADVERT @enum(value: "adverts")
+}
+

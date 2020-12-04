@@ -1,0 +1,14 @@
+#import ./types.graphql
+#import ./inputs.graphql
+
+extend type Mutation @middleware(checks: ["auth:api", "admin:moderator"]) @namespace(field: "App\\GraphQL\\Mutations\\Admin\\PaymentTransaction") {
+    "Change user balance by moderator"
+    changeUserBalance(data: ChangeUserBalanceInput): AdminPaymentTransaction @field(resolver: "ChangeUserBalance@resolve")
+}
+
+extend type Query @middleware(checks: ["auth:api", "admin:moderator"]) @namespace(field: "App\\GraphQL\\Queries\\Admin\\PaymentTransaction") {
+    "All service payment transactions"
+    allPaymentTransactions(data: AllPaymentTransactionsInput): AllPaymentTransactionsPayload @field(resolver: "AllPaymentTransactions@resolve")
+}
+
+

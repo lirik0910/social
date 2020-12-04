@@ -1,0 +1,19 @@
+interface CharityOrganization {
+    id: ID
+    "Charity`s name"
+    name: String
+    "Charity`s description"
+    description: String
+    "Charity`s link"
+    link: String
+}
+
+union Charity @union(resolveType: "App\\GraphQL\\Unions\\Charity")
+    = NativeCharityOrganization
+    | CustomCharityOrganization
+
+type CharityPayload {
+    results: [Charity]
+    total(search: String): Int @field(resolver: "App\\GraphQL\\Queries\\CharityOrganization\\Charities@getFilterTotal")
+    generalTotal: Int @field(resolver: "App\\GraphQL\\Queries\\CharityOrganization\\Charities@getResultsTotalCount")
+}

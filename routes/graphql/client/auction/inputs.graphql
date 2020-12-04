@@ -1,0 +1,123 @@
+input AuctionCreateInput {
+    "Location`s latitude"
+    location_lat: Float!
+    "Location`s longitude"
+    location_lng: Float!
+    "Future meeting`s date"
+    meeting_date: IsoDateTime!
+    "Auction`s starting bid"
+    input_bid: Int!
+    "Minimal step for rase the bid"
+    minimal_step: Int!
+    "Minimal available age for making bid"
+    min_age: Int!
+    "Max available age for making bid"
+    max_age: Int!
+    "Auction`s description"
+    description: String!
+    "Outfit value (from settings)"
+    outfit: Int!
+    "Chosen charity organization`s ID"
+    charity_organization_id: ID
+    "Determine if participants must have photo verification"
+    photo_verified_only: Boolean!
+    "Determine if meeting`s location can be displayed only for winner"
+    location_for_winner_only: Boolean!
+    "Auction`s end date"
+    end_at: IsoDateTime!
+    "Future meeting`s address"
+    address: String!
+    "Future meeting`s city"
+    city: String!
+}
+
+input AuctionUpdateInput {
+    "Auction`s ID"
+    id: ID!
+    "Location`s latitude"
+    location_lat: Float!
+    "Location`s longitude"
+    location_lng: Float!
+    "Future meeting`s date"
+    meeting_date: IsoDateTime!
+    "Auction`s starting bid"
+    input_bid: Int!
+    "Minimal step for rase the bid"
+    minimal_step: Int!
+    "Minimal available age for making bid"
+    min_age: Int!
+    "Max available age for making bid"
+    max_age: Int!
+    "Auction`s description"
+    description: String!
+    "Outfit value (from settings)"
+    outfit: Int!
+    "Chosen charity organization`s ID"
+    charity_organization_id: ID
+    "Determine if participants must have photo verification"
+    photo_verified_only: Boolean!
+    "Determine if meeting`s location can be displayed only for winner"
+    location_for_winner_only: Boolean!
+    "Auction`s end date"
+    end_at: IsoDateTime!
+    "Future meeting`s address"
+    address: String!
+    "Future meeting`s city"
+    city: String!
+}
+
+input FeedAuctionsInput {
+    "Deadline date for auction`s end date"
+    border_date: IsoDateTime @toUTC
+    "Viewed auctions IDs"
+    viewed_ids: [ID]
+    "Future meeting`s location"
+    location: LocationInput
+    "Search location`s radius value"
+    search_radius: Int
+    "Selection`s limit"
+    limit: Int
+}
+
+input ProfileAuctionsInput {
+    "Profile owner`s ID"
+    id: ID!
+    "Selection`s limit"
+    limit: Int
+    "Selection`s offset"
+    offset: Int
+}
+
+input SearchAuctionsInput {
+    "Selection`s limit"
+    limit: Int
+    "Selection`s offset"
+    offset: Int
+    "Selection`s filter"
+    filter: SearchAuctionsFilterInput
+    "Selection`s sorting params"
+    order_by: OrderByInput
+    "Deadline date for auction`s end date"
+    border_date: IsoDateTime
+}
+
+input SearchAuctionsFilterInput {
+    "Auction user`s nickname or auction`s description"
+    text: String
+    "Future meeting`s address"
+    address: String
+    "Auction user`s age"
+    age: PeriodFilterInput!
+    "Auction user`s sex value (from settings)"
+    sex: Int
+    "Period of available minimal step for making bid"
+    minimal_step: PeriodFilterInput!
+    "Period of auctions latest bid"
+    latest_bid: PeriodFilterInput!
+    "Determine if queried auctions must have charity"
+    charity_only: Boolean
+    "Determine if queried auctions must be only with photo verified user"
+    photo_verified_only: Boolean
+    "Determine if auction`s should be finished within an hour"
+    end_soon_only: Boolean
+}

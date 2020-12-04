@@ -1,0 +1,63 @@
+type PublicStream {
+    id: ID!
+    preview: String
+    title: String
+    description: String
+    tariffing: Int
+    message_cost: Int
+    min_age: Int
+    max_age: Int
+    for_subscribers_only: Boolean
+    planned_at: IsoDateTime
+    started_at: IsoDateTime
+    ended_at: IsoDateTime
+    created_at: IsoDateTime
+    current_views: Int
+    user: User @belongsTo
+    subscribers: [User]
+    subscribers_count: Int
+    preview_uri: String
+    thumbs(sizes: [String]!): Arr @method(name: "getThumbs")
+}
+
+input PublicStreamInput {
+    preview: String
+    title: String!
+    description: String!
+    tariffing: Int!
+    message_cost: Int!
+    min_age: Int!
+    max_age: Int!
+    for_subscribers_only: Boolean!
+    planned_at: IsoDateTime @toUTC
+}
+
+input PublicStreamUpdateInput {
+    id: ID!
+    preview: String
+    title: String!
+    description: String!
+    tariffing: Int!
+    message_cost: Int!
+    min_age: Int!
+    max_age: Int!
+    for_subscribers_only: Boolean!
+    planned_at: IsoDateTime @toUTC
+}
+
+input PublicStreamSubscribeInput {
+    public_stream_id: Int!
+}
+
+type PublicStreamSubscribePayload {
+    public_stream: PublicStream
+    user: User
+}
+
+extend type Mutation @middleware(checks: ["auth:api"]) @namespace(field: "App\\GraphQL\\ResolversOld\\PublicStream") {
+    updatePublicStream(data: PublicStreamUpdateInput): PublicStream @field(resolver: "PublicStreamResolver@resolveUpdate") @policy(ability: "update", model: "App\\Models\\PublicStream")
+    createPublicStream(data: PublicStreamInput): PublicStream @field(resolver: "PublicStreamResolver@resolveCreate")
+    subscribePublicStream(data: PublicStreamSubscribeInput!): PublicStreamSubscribePayload @field(resolver: "PublicStreamSubscribeResolver@resolveCreate")
+    unsubscribePublicStream(data: PublicStreamSubscribeInput!): PublicStreamSubscribePayload @field(resolver: "PublicStreamSubscribeResolver@resolveDelete")
+    startPublicStream(id: Int!): PublicStream @field(resolver: "PublicStreamResolver@resolveStart") @policy(ability: "start", model: "App\\Models\\PublicStream")
+}

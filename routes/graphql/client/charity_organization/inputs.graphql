@@ -1,0 +1,17 @@
+input CustomCharityOrganizationInput {
+    "Charity organization`s name"
+    name: String!
+    "Charity organization`s description"
+    description: String
+    "Charity organization`s link"
+    link: String
+}
+
+input CharitySearchInput {
+    "Selection`s limit"
+    limit: Int
+    "Selection`s offset"
+    offset: Int
+    "Search charity name"
+    search: String
+}

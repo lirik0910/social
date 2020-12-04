@@ -1,0 +1,9 @@
+#import ./types.graphql
+#import ./inputs.graphql
+
+extend type Mutation @middleware(checks: ["auth:api", "flag:REQUIRED_FILL_PROFILE:REQUIRED_PHONE_VERIFICATION", "banned"]) @namespace(field: "App\\GraphQL\\Mutations\\WantWithYou") {
+    "Create new wanna with you request"
+    createWantWithYou(
+        data: WantWithYouInput
+    ): WantWithYou @field(resolver: "CreateWantWithYou@resolve") @policy(ability: "create", args: "user_id")
+}

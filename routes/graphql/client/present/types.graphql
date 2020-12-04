@@ -1,0 +1,20 @@
+type Present {
+    id: ID
+    "Presents image name"
+    image: String
+    "Presents image url"
+    image_uri: String
+    "Presemt`s mimetype"
+    mimetype: String
+    "Present`s size"
+    size: String
+    "Present`s price"
+    price: Float
+    #    private_stream_presents: [PrivateStreamPresent] @hasMany
+    created_at: IsoDateTime
+}
+
+type PresentsPayload {
+    results: [Present]
+    total(id: ID!): Int @field(resolver: "App\\GraphQL\\Queries\\Present\\Presents@getTotal")
+}

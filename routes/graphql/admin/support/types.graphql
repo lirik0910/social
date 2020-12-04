@@ -1,0 +1,4 @@
+type AllUsersSupportsPayload {
+    results: [Support]
+    total(data: AllUsersSupportsFilterInput!): Int @field(resolver: "App\\GraphQL\\Queries\\Admin\\Support\\AllUsersSupports@getTotal")
+}

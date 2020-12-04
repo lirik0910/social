@@ -1,0 +1,14 @@
+input VerificationSignsInput {
+    limit: Int
+    offset: Int
+    order_by_dir: ORDER_DIR
+    filter: VerificationSignsFilterInput
+}
+
+input VerificationSignsFilterInput {
+    available: Boolean
+}
+
+input GenerateVerificationSignsPresignedUrlsInput {
+    files: [File!]
+}

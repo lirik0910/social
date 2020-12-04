@@ -1,0 +1,17 @@
+#import ./types.graphql
+#import ./inputs.graphql
+
+extend type Query @middleware(checks: ["auth:api", "admin:moderator"]) @namespace(field: "App\\GraphQL\\Queries\\Admin\\ProfilesBackground"){
+    "All profiles background"
+    profilesBackgrounds(data: ProfilesBackgroundsInput): ProfilesBackgroundsPayload @field(resolver: "ProfilesBackgrounds@resolve")
+}
+
+extend type Mutation @middleware(checks: ["auth:api", "admin:moderator"]) @namespace(field: "App\\GraphQL\\Mutations\\Admin\\ProfilesBackground"){
+    "Upload default profiles background"
+    uploadProfilesBackgrounds(files: [Upload!]): [ProfilesBackground] @field(resolver: "UploadProfilesBackgrounds@resolve")
+    "Delete default profiles background"
+    deleteProfilesBackground(id: ID!): Boolean @field(resolver: "DeleteProfilesBackground@resolve")
+    "Update default profiles background"
+    updateProfilesBackground(data: UpdateAvailabilityInput): ProfilesBackground @field(resolver: "UpdateProfilesBackground@resolve")
+}
+

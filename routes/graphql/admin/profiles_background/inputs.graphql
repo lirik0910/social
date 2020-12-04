@@ -1,0 +1,20 @@
+input ProfilesBackgroundsInput {
+    "Selection`s limit"
+    limit: Int
+    "Selection`s offset"
+    offset: Int
+    "Selection`s sorting direction"
+    order_by_dir: ORDER_DIR
+    "Selection`s filter params"
+    filter: ProfilesBackgroundsFilterInput
+}
+
+input ProfilesBackgroundsFilterInput {
+    "User who upload background (for customs)"
+    user: String
+    "Determine if background is custom"
+    custom: Boolean
+    "Availability status"
+    available: Boolean
+}
+

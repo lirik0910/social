@@ -1,0 +1,11 @@
+type AllUsersMediaPayload {
+    results: [Media]
+    total(data: AllUsersMediaFilterInput): Int @field(resolver: "App\\GraphQL\\Queries\\Admin\\Media\\AllUsersMedia@getTotal")
+}
+
+type VerifyingPayload {
+    "Verifying media"
+    media: Media
+    "Verification request"
+    verification_request: UserVerificationPhoto
+}

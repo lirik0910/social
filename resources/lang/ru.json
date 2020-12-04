@@ -1,0 +1,12 @@
+{
+  "Have fun, find love,or even date a celebrity!": "Веселитесь, найдите любовь или даже встречайтесь со знаменитостью!",
+  "The user credentials were incorrect.": "Учетные данные пользователя введены неверно.",
+  "Unable to register user.": "Не удалось зарегистрировать пользователя.",
+  "Input validation failed.": "Ошибка валидации данных.",
+  "Error": "Ошибка",
+  "Payment System Error": "Ошибка платежной системы",
+  "Your IP address is not allowed by payment system": "Ваш IP-адрес не разрешен платежной системой",
+  "Too little amount for transaction": "Слишком маленькая сумма для транзакции",
+  "Too big amount for transaction": "Слишком большая сумма для транзакции",
+  "Request rejected by AntiFraud system": "Запрос отклонен системой AntiFraud"
+}

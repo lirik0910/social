@@ -1,0 +1,10 @@
+#import ./types.graphql
+#import ./inputs.graphql
+
+extend type Query @middleware(checks: ["auth:api"]) @namespace(field: "App\\GraphQL\\Queries\\ServicePage") {
+    "Service pages selection for footer"
+    servicePagesFooter(locale: LOCALE!): [ServicePage] @field(resolver: "ServicePagesFooter@resolve")
+}
+
+
+

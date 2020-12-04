@@ -1,0 +1,26 @@
+#import ./types.graphql
+#import ./inputs.graphql
+
+extend type Query @middleware(checks: ["auth:api", "admin:moderator"]) @namespace(field: "App\\GraphQL\\Queries\\Admin\\Present") {
+    "All presents categories"
+    allPresentCategories(data: AllPresentCategoriesInput): AllPresentCategoriesPayload @field(resolver: "AllPresentCategories@resolve")
+    "All presents for category"
+    categoryPresents(category_id: ID): [Present] @field(resolver: "CategoryPresents@resolve")
+}
+
+extend type Mutation @middleware(checks: ["auth:api", "admin:moderator"]) @namespace(field: "App\\GraphQL\\Mutations\\Admin\\Present") {
+    "Create presents category"
+    createPresentCategory(data: CreatePresentCategoryInput): PresentCategory @field(resolver: "CreatePresentCategory@resolve")
+    "Update presents category"
+    updatePresentCategory(data: UpdatePresentCategoryInput): PresentCategory @field(resolver: "UpdatePresentCategory@resolve")
+    "Delete presents category"
+    deletePresentCategory(id: ID!): Boolean @field(resolver: "DeletePresentCategory@resolve")
+
+    "Create presents"
+    createPresents(data: CreatePresentsInput): [Present] @field(resolver: "CreatePresents@resolve")
+    "Update presents"
+    updatePresent(data: UpdatePresentInput): Present @field(resolver: "UpdatePresent@resolve")
+    "Delete presents"
+    deletePresent(id: ID!): Boolean @field(resolver: "DeletePresent@resolve")
+}
+

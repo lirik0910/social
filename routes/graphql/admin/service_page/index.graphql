@@ -1,0 +1,15 @@
+#import ./types.graphql
+#import ./inputs.graphql
+
+extend type Query @middleware(checks: ["auth:api", "admin:moderator"]) @namespace(field: "App\\GraphQL\\Queries\\Admin\\ServicePage") {
+    "All service pages selection"
+    servicePages(locale: LOCALE!): [ServicePage] @field(resolver: "ServicePages@resolve")
+}
+
+extend type Mutation @middleware(checks: ["auth:api", "admin:moderator"]) @namespace(field: "App\\GraphQL\\Mutations\\Admin\\ServicePage") {
+  #  "Create service page"
+  #  createServicePage(data: CreateServicePageInput): ServicePage @field(resolver: "CreateServicePage@resolve")
+    "Update service page"
+    updateServicePage(data: UpdateServicePageInput): ServicePage @field(resolver: "UpdateServicePage@resolve")
+}
+

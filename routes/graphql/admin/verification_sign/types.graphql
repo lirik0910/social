@@ -1,0 +1,13 @@
+type VerificationSign {
+    id: ID
+    name: String
+    size: String
+    image_url: String
+    available: Boolean
+    created_at: IsoDateTime
+}
+
+type VerificationSignsPayload {
+    results: [VerificationSign]
+    total(data: VerificationSignsFilterInput): Int @field(resolver: "App\\GraphQL\\Queries\\Admin\\VerificationSign\\VerificationSigns@getTotal")
+}

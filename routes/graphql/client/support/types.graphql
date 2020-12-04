@@ -1,0 +1,51 @@
+type Support {
+    id: ID!
+    "User`s ID (who create support request)"
+    user_id: ID
+    "Moderator`s ID"
+    moderator_id: ID
+    "Support category value (from settings)"
+    category: Int
+    "Support request status value (from settings)"
+    status: Int
+    "Init message"
+    question: SupportMessage
+    "User who create support request"
+    user: ListUser @belongsTo
+    moderator: ModeratorUser @belongsTo
+    created_at: IsoDateTime
+    updated_at: IsoDateTime
+    "Determine if request has messages unviewed by user"
+    unviewed_by_user: Boolean
+    "Determine if request has messages unviewed by moderator"
+    unviewed_by_moderator: Boolean
+}
+
+type SupportMessage {
+    id: ID
+    "Message user`s ID"
+    user_id: ID
+    "Parent support request"
+    support: Support! @belongsTo
+    "User who create message"
+    user: ListUser @belongsTo
+    "Message body"
+    message: String
+    created_at: IsoDateTime
+    updated_at: IsoDateTime
+}
+
+type SupportMessages {
+    results: [SupportMessage]
+    total(id: ID!): Int @field(resolver: "App\\GraphQL\\Queries\\Support\\SupportMessages@getTotal")
+}
+
+type SupportsPayload {
+    results: [Support]
+    total: Int @field(resolver: "App\\GraphQL\\Queries\\Support\\Supports@getTotal")
+}
+
+type CreateSupportPayload {
+    support: Support
+    message: SupportMessage
+}

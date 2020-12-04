@@ -1,0 +1,66 @@
+input ChatRoomsInput {
+    "Chat rooms selection`s filter params"
+    filter: ActiveChatRoomFilterInput
+    "Selection`s limit"
+    limit: Int
+    "Selection`s offset"
+    offset: Int
+}
+
+input ActiveChatRoomFilterInput {
+    "Chat room type (from settings)"
+    type: Int!
+    "Chat room other user nickname"
+    nickname: String
+    "Determine if chat room must was closed or not"
+    is_closed: Boolean
+}
+
+input CreateChatRoomInput {
+    "User ID (other user in chat conversation)"
+    user_id: ID!
+    "Chat init message"
+    message: String!
+}
+
+input EditChatRoomInput {
+    "Edited room ID"
+    room_id: ID!
+    "New room`s message price"
+    price: Int!
+}
+
+input CreateChatMessageInput {
+    "Chat room`s ID"
+    room_id: ID!
+    "Message`s text"
+    message: String!
+}
+
+input ChatRoomMessagesInput {
+    "Chat room`s ID"
+    id: ID!
+    "Selection`s limit"
+    limit: Int
+    "Selection`s offset"
+    offset: Int
+}
+
+input ChatRoomPaymentsInput {
+    "Selection`s limit"
+    limit: Int
+    "Selection`s offset"
+    offset: Int
+    "Selection`s filter"
+    filter: ChatRoomPaymentsFilterInput
+}
+
+input ChatRoomPaymentsFilterInput {
+    "Determine if chat room must be ended"
+    ended: Boolean
+}
+
+input GetChatRoomInput {
+    "Get chat room by user ID"
+    user_id: ID
+}

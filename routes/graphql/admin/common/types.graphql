@@ -1,0 +1,4 @@
+enum LOCALE {
+    RU @enum(value: "ru")
+    EN @enum(value: "en")
+}

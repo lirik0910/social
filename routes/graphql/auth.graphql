@@ -1,0 +1,51 @@
+extend type Mutation {
+    login(data: LoginInput): AuthPayload! @field(resolver: "App\\GraphQL\\Mutations\\Auth\\Login@resolve")
+    register(data: RegisterInput!) : AuthPayload! @field(resolver: "App\\GraphQL\\Mutations\\Auth\\Register@resolve")
+    logout: LogoutResponse! @field(resolver: "Joselfonseca\\LighthouseGraphQLPassport\\GraphQL\\Mutations\\Logout@resolve")
+    forgotPassword(data: ForgotPasswordInput!): ForgotPasswordResponse! @field(resolver: "App\\GraphQL\\Mutations\\Auth\\ForgotPassword@resolve")
+    resetPassword(data: ResetPasswordInput): ResetPasswordResponse! @field(resolver: "App\\GraphQL\\Mutations\\Auth\\ResetPassword@resolve")
+}
+
+input LoginInput {
+    phone: String!
+    password: String!
+    recaptcha: String
+}
+
+input RegisterInput {
+    code: String!
+    number: String!
+    password: String!
+    password_confirmation: String!
+    adult: Boolean!
+    recaptcha: String
+}
+
+input ForgotPasswordInput {
+    phone: String!
+}
+
+input ResetPasswordInput {
+    phone: String!
+    token: String!
+    password: String!
+    password_confirmation: String!
+}
+
+type AuthPayload {
+    token: String!
+    user: User!
+}
+
+type LogoutResponse {
+    status: String!
+    message: String
+}
+
+type ForgotPasswordResponse {
+    time: Int!
+}
+
+type ResetPasswordResponse {
+    status: String!
+}

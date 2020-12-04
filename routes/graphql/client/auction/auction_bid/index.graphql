@@ -1,0 +1,12 @@
+#import ./types.graphql
+#import ./inputs.graphql
+
+extend type Query @middleware(checks: ["auth:api", "flag:REQUIRED_FILL_PROFILE:REQUIRED_PHONE_VERIFICATION", "banned"]) @namespace(field: "App\\GraphQL\\Queries\\Auction") {
+    "All bids for one auction"
+    auctionBids(data: AuctionBidsInput): AuctionBidsPayload @field(resolver: "AuctionBids@resolve")
+}
+
+extend type Mutation @middleware(checks: ["auth:api", "flag:REQUIRED_FILL_PROFILE:REQUIRED_PHONE_VERIFICATION", "banned"]) @namespace(field: "App\\GraphQL\\Mutations\\Auction") {
+    "Create bid for auction"
+    createAuctionBid(data: CreateAuctionBidInput): AuctionBid @field(resolver: "CreateAuctionBid@resolve")
+}

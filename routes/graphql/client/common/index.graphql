@@ -1,0 +1,7 @@
+#import ./types.graphql
+#import ./inputs.graphql
+
+extend type Query @namespace(field: "App\\GraphQL\\Queries\\Common") {
+    "Service settins"
+    settings: Arr! @field(resolver: "Settings@resolve")
+}

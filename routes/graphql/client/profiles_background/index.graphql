@@ -1,0 +1,16 @@
+#import ./types.graphql
+#import ./inputs.graphql
+
+extend type Mutation @middleware(checks: ["auth:api", "flag:REQUIRED_FILL_PROFILE:REQUIRED_PHONE_VERIFICATION", "banned"]) @namespace(field: "App\\GraphQL\\Mutations\\Profile") {
+    "Generate user`s background presigned urls"
+    generateCustomBackgroundPresignedUrls(data: FileUploadInput!): BackPresignedUrl @field(resolver: "GenerateCustomBackgroundPresignedUrls@resolve")
+    "Store uploaded user`s background store"
+    customBackgroundUploadStore(data: FileStoreInput!): StorePayload! @field(resolver: "CustomBackgroundUploadStore@resolve")
+    "Change active background for authorized user"
+    changeBackground(id: ID): ProfileUser! @field(resolver: "ChangeBackground@resolve")
+}
+
+extend type Query @middleware(checks: ["auth:api", "flag:REQUIRED_FILL_PROFILE:REQUIRED_PHONE_VERIFICATION", "banned"]) @namespace(field: "App\\GraphQL\\Queries\\Profile") {
+    "All profile backgrounds available for client users"
+    profileBackgrounds: [ProfilesBackground] @field(resolver: "ProfileBackgrounds")
+}

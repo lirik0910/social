@@ -1,0 +1,15 @@
+input MediaPresentInput {
+    "Media ID"
+    media_id: ID!
+    "Present ID"
+    present_id: ID!
+}
+
+input MediaPresentsInput {
+    "Media ID"
+    media_id: ID!
+    "Selction`s limit"
+    limit: Int
+    "Selection`s offset"
+    offset: Int
+}

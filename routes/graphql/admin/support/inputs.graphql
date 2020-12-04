@@ -1,0 +1,41 @@
+input ChangeSupportCategoryInput {
+    "Support request ID"
+    id: ID!
+    "Support category value (from settings)"
+    category: Int!
+}
+
+input ChangeSupportModeratorInput {
+    "Support request ID"
+    id: ID!
+    "New moderator ID"
+    moderator_id: ID!
+}
+
+input AllUsersSupportsInput {
+    "Selection`s limit"
+    limit: Int
+    "Selection`s offset"
+    offset: Int
+    "Selection`s sorting direction"
+    order_by_dir: ORDER_DIR
+    "Selection`s filter params"
+    filter: AllUsersSupportsFilterInput!
+}
+
+input AllUsersSupportsFilterInput {
+    "Support request category value (from settings)"
+    category: Int!
+    "Support request status value (from settings)"
+    status: Int
+    "Support request user`s nickname"
+    user: String
+    "Support request moderator`s nickname"
+    moderator: String
+    "Determine if support request must be only where moderator is auth user"
+    only_mine: Boolean
+    "Support request updated date"
+    updated_date: Date
+    "Support request updated date period"
+    updated_date_period: DatePeriod
+}

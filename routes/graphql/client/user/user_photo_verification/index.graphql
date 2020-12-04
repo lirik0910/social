@@ -1,0 +1,11 @@
+#import ./types.graphql
+#import ./inputs.graphql
+
+extend type Mutation @middleware(checks: ["auth:api", "flag:REQUIRED_FILL_PROFILE:REQUIRED_PHONE_VERIFICATION", "banned"]) {
+    "Create verification record and get verification sign"
+    generateVerificationPhoto(media_id: ID): GenerateVerificationPhotoPayload! @field(resolver: "App\\GraphQL\\Mutations\\PhotoVerification\\GenerateVerificationPhoto@resolve")
+    "Generate presigned urls for user verification photo"
+    generateVerificationPhotoPresignUrl(data: PresignUriVerificationPhotoInput!) : PresignUriVerificationPhotoPayload! @field(resolver: "App\\GraphQL\\Mutations\\PhotoVerification\\GenerateVerificationPhotoPresignedUrls@resolve")
+    "Store uploaded user`s verification photo"
+    verificationPhotoUploadStore(data: StoreVerificationPhotoInput!) : StoreVerificationPhotoPayload! @field(resolver: "App\\GraphQL\\Mutations\\PhotoVerification\\VerificationPhotoUploadStore@resolve")
+}

@@ -1,0 +1,34 @@
+input AllUsersAdvertsInput {
+    "Selection`s limit"
+    limit: Int
+    "Selection`s offset"
+    offset: Int
+    "Selection`s filter"
+    filter: AllUsersAdvertsFilterInput
+    "Selection`s sorting params"
+    order_by: AllUsersAdvertsOrderByInput
+}
+
+input AllUsersAdvertsFilterInput {
+    "Advert`s type"
+    type: Int
+    "Advert`s created date"
+    created_date: Date
+    "Advert`s created date period"
+    created_date_period: DatePeriod
+    "Determine if advert`s meeting is free"
+    free: Boolean
+    "Period of advert`s price value"
+    price_period: PricePeriod
+    "User who create advert"
+    user: String
+    "Determine if advert has relation with charity orgnization"
+    charity_only: Boolean
+}
+
+input AllUsersAdvertsOrderByInput {
+    "Sorting direction"
+    dir: ORDER_DIR
+    "Sorting column"
+    column: ADVERTS_ORDER_BY_COLUMN
+}

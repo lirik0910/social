@@ -1,0 +1,41 @@
+type BackPresignedUrl {
+    rname: String!
+    name: String!
+    uri: String!
+    mimetype: String!
+    thumbs: [BackFileThumb]
+}
+
+type BackFileThumb {
+    prefix: String
+    rname: String
+    name: String
+    mimetype: String
+    uri: String
+}
+
+type StorePayload {
+    user: ListUser
+    media: ProfilesBackground
+}
+
+type ProfilesBackground {
+    id: ID
+    "User`s ID (who create background)"
+    user_id: ID
+    "File`s name"
+    name: String
+    "File`s size"
+    size: String
+    "File`s mimetype"
+    mimetype: String
+    created_at: IsoDateTime
+    "File`s image url"
+    image_url: String
+    "Determine if background available for client users"
+    available: Boolean
+    "File`s thumbnails"
+    thumbs(sizes: [String]): Arr @method(name: "getThumbs")
+    "User who create"
+    user: UserForAdminPanel @belongsTo
+}

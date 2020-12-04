@@ -1,0 +1,73 @@
+#import ./types.graphql
+#import ./inputs.graphql
+#import ./user_meetings_options/index.graphql
+#import ./user_photo_verification/index.graphql
+
+extend type Mutation @middleware(checks: ["auth:api"]) {
+    # REGISTER FUNCTIONALITY
+    "Send sms code on user`s phone (phone confirmation)"
+    registerSms: SmsPayload! @field(resolver: "App\\GraphQL\\Mutations\\Auth\\SendSms@resolve")
+    "Confirm sms code for phone confirmation"
+    registerSmsConfirm(data: RegisterSmsConfirmInput!) : SmsConfirmPayload! @field(resolver: "App\\GraphQL\\Mutations\\Auth\\ConfirmSms@resolve")
+}
+
+extend type Mutation @middleware(checks: ["auth:api", "flag:REQUIRED_FILL_PROFILE:REQUIRED_PHONE_VERIFICATION", "banned"]) {
+    # USER SETTINGS
+    "Change authorized user`s password"
+    changePassword(data: ChangePasswordInput) : String @field(resolver: "User\\ChangePassword@resolve")
+    "Change authorized user`s privacy status"
+    changePrivacy: User! @field(resolver: "User\\TogglePrivacy@resolve")
+    "Change two step verification setting"
+    changeTwoStepVerification(data: ChangeTwoStepVerificationInput) : User! @field(resolver: "User\\ToggleTwoStepVerification@resolve")
+    "Change avatar (by avatar`s ID)"
+    changeAvatar(id: ID!): User! @field(resolver: "User\\ChangeAvatar@resolve")
+    "Update authorized user`s notifications settings"
+    updateNotificationsSetting(data: UpdateNotificationsSetting): Arr @field(resolver: "App\\GraphQL\\Mutations\\User\\UpdateNotificationsSetting@resolve")
+    "Create authorized user`s credit card"
+    creditCart(data: CreditCartInput!) : CreditCartPayload! @field(resolver: "App\\GraphQL\\Mutations\\Payment\\CreateCreditCart@resolve")
+    "Delete authorized user"
+    deleteUser: Boolean @field(resolver: "App\\GraphQL\\Mutations\\User\\DeleteUser")
+
+    # USER ACTIONS
+    "Subscribe on user (by user ID)"
+    subscribe(id: ID!): SubscribePayload @field(resolver: "App\\GraphQL\\Mutations\\UserActions\\SubscribeUser@resolve")
+    "Unsubscribe from user (by user ID)"
+    unsubscribe(id: ID!): SubscribePayload @field(resolver: "App\\GraphQL\\Mutations\\UserActions\\UnsubscribeUser@resolve")
+    "Block user by his ID"
+    blockUserById(id: ID!): Int @field(resolver: "App\\GraphQL\\Mutations\\UserActions\\BlockUserById@resolve")
+    "Block user by his phone"
+    blockUserByPhone(data: BlockUserByPhoneInput): BlockedRecordByPhone @field(resolver: "App\\GraphQL\\Mutations\\UserActions\\BlockUserByPhone@resolve")
+    "Unblock user by his ID"
+    unblockUser(id: ID!): Int @field(resolver: "App\\GraphQL\\Mutations\\UserActions\\UnblockUser@resolve")
+    "Unblock user by record ID"
+    unblockUserByRowId(id: ID!): Int @field(resolver: "App\\GraphQL\\Mutations\\UserActions\\UnblockUserByRowId@resolve")
+    "Add device for authorized user"
+    addUserDevice(data: UserDevice): Boolean @field(resolver: "App\\GraphQL\\Mutations\\UserActions\\AddUserDevice@resolve")
+}
+
+extend type Query @middleware(checks: ["auth:api"]) {
+    "Authorized user"
+    me: User @auth
+}
+
+extend type Query @middleware(checks: ["auth:api", "flag:REQUIRED_FILL_PROFILE:REQUIRED_PHONE_VERIFICATION", "banned"]) {
+    "All user`s subscribes selection"
+    subscribes(data: SubscribesInput): GetSubscribesPayload @field(resolver: "App\\GraphQL\\Queries\\User\\Subscribes@resolve")
+    "All user`s subscribes selection"
+    subscribers(data: SubscribersInput): GetSubscribersPayload @field(resolver: "App\\GraphQL\\Queries\\User\\Subscribers@resolve")
+    "All users which blocked by ID selection"
+    userBlocksById(data: BlockedUserRecordsInput): BlockedRecordsByIdPayload @field(resolver: "App\\GraphQL\\Queries\\User\\UserBlocksById@resolve")
+    "All blocking phone records selection"
+    userBlocksByPhone(data: BlockedUserRecordsInput): BlockedRecordsByPhonePayload @field(resolver: "App\\GraphQL\\Queries\\User\\UserBlocksByPhone@resolve")
+    "One user by his slug (uri)"
+    user(slug: String!): ProfileUser @field(resolver: "App\\GraphQL\\Queries\\User\\User@resolve")
+    "Search from all users"
+    searchUsers(data: SearchUsersInput): SearchUsersPayload @field(resolver: "App\\GraphQL\\Queries\\User\\SearchUsers@resolve")
+    "User`s notifications settings"
+    userNotificationsSettings: Arr @field(resolver: "App\\GraphQL\\Queries\\User\\UserNotificationsSettings")
+    "Subscribes selection for favorite page"
+    favoriteSubscribes(limit: Int): [ListUser] @field(resolver: "App\\GraphQL\\Queries\\User\\FavoriteSubscribes@resolve")
+
+    # TODO remove after debbuging
+    testNitification: Boolean @field(resolver: "App\\GraphQL\\Mutations\\UserActions\\AddUserDevice@testNotification")
+}

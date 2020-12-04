@@ -1,0 +1,36 @@
+input CreateSupportInput {
+    "Support category value (from settings)"
+    category: Int!
+    "Support init message"
+    message: String!
+}
+
+input CreateSupportMessageInput {
+    "Support request`s ID"
+    support_id: ID!
+    "Message body"
+    message: String!
+}
+
+input SupportMessagesInput {
+    "Support request`s ID"
+    support_id: ID!
+    "Selection`s limit"
+    limit: Int
+    "Selection`s offset"
+    offset: Int
+}
+
+input SupportsInput {
+    "Selection`s limit"
+    limit: Int
+    "Selection`s offset"
+    offset: Int
+}
+
+input ChangeSupportStatusInput {
+    "Support request`s ID"
+    id: ID!
+    "Support request`s status value (from settings)"
+    status: Int!
+}

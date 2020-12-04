@@ -1,0 +1,83 @@
+input AdvertInput {
+    "Future mmeeting`s location latitude"
+    location_lat: Float!
+    "Future meting`s location longitude"
+    location_lng: Float!
+    "Future meeting`s date"
+    meeting_date: IsoDateTime!
+    "Price for feature meeting"
+    price: Int!
+    "Avalable min age for creating advert`s respond"
+    min_age: Int!
+    "Available max age for creating advert`s respond"
+    max_age: Int!
+    "Detemine if responded user must be photo verified"
+    photo_verified_only: Boolean!
+    "Outfit value (from setting)"
+    outfit: Int!
+    "Advert`s type (from settings)"
+    type: Int!
+    #  charity_organization_id: Int
+    "Future meeting`s adress"
+    address: String!
+    "Determine if deal must be safe"
+    safe_deal_only: Boolean!
+}
+
+input AdvertRespondInput {
+    "Responded advert`s ID"
+    advert_id: ID!
+}
+
+input ApproveAdvertRespondInput {
+    "Responded advert`s ID"
+    advert_id: ID!
+    "Responds`s user"
+    user_id: ID!
+}
+
+input AdvertRespondsInput {
+    "Responded advert`s ID"
+    id: ID!
+    "Selection`s limit"
+    limit: Int
+    "Selction`s offset"
+    offset: Int
+}
+
+input UserAdvertsInput {
+    "Selection`s limit"
+    limit: Int
+    "Selection`s offset"
+    offset: Int
+    "Selection`s filter"
+    filter: UserAdvertsFilterInput
+}
+
+input UserAdvertsFilterInput {
+    "Advert`s type (from settings)"
+    type: Int
+    "Advert`s status (from settings)"
+    status: Int
+}
+
+input UserRespondedAdvertsInput {
+    "Selection`s limit"
+    limit: Int
+    "Selection`s offset"
+    offset: Int
+}
+
+input FeedAdvertsInput {
+    "Advert`s deadline border date"
+    border_date: IsoDateTime @toUTC
+    "Viewed adverts IDs"
+    viewed_ids: [ID]
+    "Location input"
+    location: LocationInput
+    "Searching locaton radius value"
+    search_radius: Int
+    "Selection`s limit"
+    limit: Int
+}
+

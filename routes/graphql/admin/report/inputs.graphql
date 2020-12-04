@@ -1,0 +1,44 @@
+input AllReportsInput {
+    "Selection`s limit"
+    limit: Int
+    "Selection`s offset"
+    offset: Int
+    "Report`s type"
+    type: ReportedType!
+    "Selection`s filter params"
+    filter: AllReportsFilterInput
+    "Selection`s sorting direction"
+    order_by_dir: ORDER_DIR
+}
+
+input AllReportsFilterInput {
+    "Reported user`s nickname"
+    reported_user: String
+    "Report`s status (from settings)"
+    status: Int
+    "Report`s reason (from settings)"
+    reason: Int
+}
+
+input AllReportsTotalInput {
+    "Report`s type"
+    type: ReportedType!
+    "Report`s filter params"
+    filter: AllReportsFilterInput
+}
+
+input ApproveReportInput {
+    "Report`s type"
+    reported_type: ReportedType!
+    "Report`s source ID"
+    reported_id: ID!
+    "Moderation reason (from settings)"
+    moderation_reason: Int!
+}
+
+input DeclineReportInput {
+    "Reported source type"
+    reported_type: ReportedType!
+    "Reported source ID"
+    reported_id: ID!
+}

@@ -1,0 +1,24 @@
+#import ./types.graphql
+#import ./inputs.graphql
+#import ./auction_bid/index.graphql
+
+
+extend type Query @middleware(checks: ["auth:api", "flag:REQUIRED_FILL_PROFILE:REQUIRED_PHONE_VERIFICATION", "banned"]) @namespace(field: "App\\GraphQL\\Queries\\Auction") {
+    "Get one auction"
+    auction(id: ID!): AuctionPayload @field(resolver: "Auction@resolve")
+    "Auctions history for authorized user"
+    auctionsHistory(filter: HistoryFilterInput!): AuctionsHistoryPayload @field(resolver: "AuctionsHistory@resolve")
+    "Selection of auctions for feed page"
+    feedAuctions(data: FeedAuctionsInput): FeedAuctionsPayload @field(resolver: "FeedAuctions@resolve")
+    "Selection of auctions for profile page"
+    profileAuctions(data: ProfileAuctionsInput): AuctionsPayload @field(resolver: "ProfileAuctions@resolve")
+    "Selection of auctions for searching page"
+    searchAuctions(data: SearchAuctionsInput): SearchAuctionsPayload @field(resolver: "SearchAuctions@resolve")
+}
+extend type Mutation @middleware(checks: ["auth:api", "flag:REQUIRED_FILL_PROFILE:REQUIRED_PHONE_VERIFICATION", "banned"]) @namespace(field: "App\\GraphQL\\Mutations\\Auction") {
+    "Create auction"
+    createAuction(data: AuctionCreateInput): Auction @field(resolver: "CreateAuction@resolve")
+    #  updateAuction(data: AuctionUpdateInput): Auction @field(resolver: "UpdateAuction@resolve") @policy(ability: "update", model: "App\\Models\\Auction")
+    "Cancel auction"
+    cancelAuction(id: ID!): Auction @field(resolver: "CancelAuction@resolve")
+}

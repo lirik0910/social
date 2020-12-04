@@ -1,0 +1,167 @@
+interface BaseProfile {
+    "Profile`s ID"
+    id: ID
+    "Profile user age"
+    age: Date
+    "Profile user sex value (from settings)"
+    sex: Int
+    "Profile user dating preference value (from settings)"
+    dating_preference: Int
+    "Profile user country"
+    country: String
+    "Profile user region"
+    region: String
+    "Profile user address"
+    address: String
+    "Profile user height"
+    height: Int
+    "Profile user physique value (from settings)"
+    physique: Int
+    "Profile user appearance value (from settings)"
+    appearance: Int
+    "Profile user eye color value (from settings)"
+    eye_color: Int
+    "Profile user hair color value (from settings)"
+    hair_color: Int
+    "Profile user occupation value (from settings)"
+    occupation: String
+    "Profile user marital status (from settings)"
+    marital_status: Int
+    "Profile user kids (from settings)"
+    kids: Int
+    "Profile user languages (from settings)"
+    languages: [Int]
+    "Profile user smoking value (from settings)"
+    smoking: Int
+    "Profile user alcohol value (from settings)"
+    alcohol: Int
+    "About user text field"
+    about: String
+    "User`s years value"
+    years: Int
+    "User`s background uri"
+    background_uri: String
+    "Profile user name"
+    name: String
+    "Profile user surname"
+    surname: String
+    "Chat price"
+    chat_price: Int
+}
+
+type Profile implements BaseProfile {
+    "User`s ID"
+    id: ID
+    "Profile user age"
+    age: Date
+    "Profile user sex value (from settings)"
+    sex: Int
+    "Profile user dating preference value (from settings)"
+    dating_preference: Int
+    "Profile user country"
+    country: String
+    "Profile user region"
+    region: String
+    "Profile user address"
+    address: String
+    "Profile user location latitude"
+    lat: Float
+    "Profile user location longitude"
+    lng: Float
+    "Profile user name"
+    name: String
+    "Profile user surname"
+    surname: String
+    "Profile user height"
+    height: Int
+    "Profile user physique value (from settings)"
+    physique: Int
+    "Profile user appearance value (from settings)"
+    appearance: Int
+    "Profile user eye color value (from settings)"
+    eye_color: Int
+    "Profile user hair color value (from settings)"
+    hair_color: Int
+    "Profile user occupation value (from settings)"
+    occupation: String
+    "Profile user marital status (from settings)"
+    marital_status: Int
+    "Profile user kids (from settings)"
+    kids: Int
+    "Profile user languages (from settings)"
+    languages: [Int]
+    "Profile user smoking value (from settings)"
+    smoking: Int
+    "Profile user alcohol value (from settings)"
+    alcohol: Int
+    "About user text field"
+    about: String
+    "Profile`s created date"
+    created_at: IsoDateTime!
+    "Profile`s updated date"
+    updated_at: IsoDateTime!
+    "Profile user`s years"
+    years: Int
+    "Profile`s background file name"
+    profile_background: String
+    "Profile`s background uri"
+    background_uri: String
+    "Profile user chat price"
+    chat_price: Int
+}
+
+type GuestProfile implements BaseProfile @modelClass(class: "\\App\\Models\\Profile") {
+    "User`s ID"
+    id: ID
+    "Profile user age"
+    age: Date
+    "Profile user sex value (from settings)"
+    sex: Int
+    "Profile user dating preference value (from settings)"
+    dating_preference: Int
+    "Profile user country"
+    country: String
+    "Profile user region"
+    region: String
+    "Profile user address"
+    address: String
+    "Profile user height"
+    height: Int
+    "Profile user physique value (from settings)"
+    physique: Int
+    "Profile user appearance value (from settings)"
+    appearance: Int
+    "Profile user eye color value (from settings)"
+    eye_color: Int
+    "Profile user hair color value (from settings)"
+    hair_color: Int
+    "Profile user occupation value (from settings)"
+    occupation: String
+    "Profile user marital status (from settings)"
+    marital_status: Int
+    "Profile user kids (from settings)"
+    kids: Int
+    "Profile user languages (from settings)"
+    languages: [Int]
+    "Profile user smoking value (from settings)"
+    smoking: Int
+    "Profile user alcohol value (from settings)"
+    alcohol: Int
+    "About user text field"
+    about: String
+    "Profile user`s years"
+    years: Int
+    "Profile`s background uri"
+    background_uri: String
+    "Profile user name"
+    name: String
+    "Profile user surname"
+    surname: String
+    "Profile user chat price"
+    chat_price: Int
+}
+
+type ProfilePayload {
+    user: User
+    profile: Profile
+}

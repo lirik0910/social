@@ -1,0 +1,22 @@
+type GenerateVerificationPhotoPayload {
+    "Verification sign uri"
+    uri: String!
+    "Verification sign expiring time"
+    expired_at: IsoDateTime!
+}
+
+type PresignUriVerificationPhotoPayload {
+    "User`s photo temporary name"
+    rname: String!
+    "User`s photo name"
+    name: String!
+    "User`s photo mimetype"
+    mimetype: String!
+    "User`s photo presigned url"
+    uri: String!
+}
+
+type StoreVerificationPhotoPayload {
+    user: ListUser
+    media: Media
+}

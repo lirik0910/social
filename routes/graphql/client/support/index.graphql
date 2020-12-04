@@ -1,0 +1,20 @@
+#import ./types.graphql
+#import ./inputs.graphql
+
+extend type Query @middleware(checks: ["auth:api", "flag:REQUIRED_FILL_PROFILE:REQUIRED_PHONE_VERIFICATION", "banned"]) @namespace(field: "App\\GraphQL\\Queries\\Support") {
+    "All supports for authorized user"
+    supports(data: SupportsInput!): SupportsPayload @field(resolver: "Supports@resolve")
+    "All messages for one support"
+    supportMessages(data: SupportMessagesInput!) : SupportMessages! @field(resolver: "SupportMessages@resolve")
+}
+
+extend type Mutation @middleware(checks: ["auth:api", "flag:REQUIRED_FILL_PROFILE:REQUIRED_PHONE_VERIFICATION", "banned"]) @namespace(field: "App\\GraphQL\\Mutations\\Support") {
+    "Create support request"
+    createSupport(data: CreateSupportInput!): CreateSupportPayload @field(resolver: "CreateSupport@resolve")
+    "Create support fequest`s message"
+    createSupportMessage(data: CreateSupportMessageInput!): SupportMessage! @field(resolver: "CreateMessage@resolve")
+    "Update support request`s status"
+    changeSupportStatus(data: ChangeSupportStatusInput!): Support! @field(resolver: "ChangeSupportStatus@resolve")
+    "Make support changes viewed"
+    makeSupportViewed(id: ID!): Support! @field(resolver: "MakeSupportViewed@resolve")
+}

@@ -1,0 +1,22 @@
+type MediaPresent {
+    id: ID
+    "Present`s price"
+    price: Float
+    "Present`s image url"
+    image_url: String
+    "Created (send at) date"
+    created_at: IsoDateTime
+    "User who send present"
+    user: ListUser @belongsTo
+    "Sended present"
+    present: Present @belongsTo
+    "Media"
+    media: GuestMedia @belongsTo
+}
+
+type MediaPresentsPayload {
+    results: [MediaPresent]
+    "Overall cost of media`s presents"
+    total_cost: Int
+    total(id: ID!): Int @field(resolver: "App\\GraphQL\\Queries\\MediaPresent\\MediaPresents@getTotal")
+}

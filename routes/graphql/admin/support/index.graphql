@@ -1,0 +1,14 @@
+#import ./types.graphql
+#import ./inputs.graphql
+
+extend type Query @middleware(checks: ["auth:api", "admin:moderator"]) @namespace(field: "App\\GraphQL\\Queries\\Admin\\Support") {
+    "All support requests"
+    allUsersSupports(data: AllUsersSupportsInput): AllUsersSupportsPayload @field(resolver: "AllUsersSupports@resolve")
+}
+
+extend type Mutation @middleware(checks: ["auth:api", "admin:moderator"]) @namespace(field: "App\\GraphQL\\Mutations\\Admin\\Support") {
+    "Change category for support request"
+    changeSupportCategory(data: ChangeSupportCategoryInput!): Support! @field(resolver: "ChangeSupportCategory@resolve")
+    "Change moderatot for support request"
+    changeSupportModerator(data: ChangeSupportModeratorInput!): Support! @field(resolver: "ChangeSupportModerator@resolve")
+}

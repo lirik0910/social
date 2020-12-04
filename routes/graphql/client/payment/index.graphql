@@ -1,0 +1,16 @@
+#import ./types.graphql
+#import ./inputs.graphql
+
+extend type Query @middleware(checks: ["auth:api", "flag:REQUIRED_FILL_PROFILE:REQUIRED_PHONE_VERIFICATION", "banned"]) @namespace(field: "App\\GraphQL\\Queries\\Payment") {
+    "Authoried user`s payment orders (in service/out of service)"
+    usersPaymentOrders(data: ViewOrdersInput): ViewOrdersPayload @field(resolver: "UserPaymentOrders@resolve")
+    "All payment transactions for authorized user"
+    usersPaymentTransactions(data: ViewTransactionsInput): ViewTransactionsPayload @field(resolver: "UserPaymentTransactions@resolve")
+}
+extend type Mutation @middleware(checks: ["auth:api", "flag:REQUIRED_FILL_PROFILE:REQUIRED_PHONE_VERIFICATION", "banned"]) @namespace(field: "App\\GraphQL\\Mutations\\Payment") {
+    "Input credits into service"
+    paymentOrderIn(data: OrderInputIn): PaymentTransaction @field(resolver: "PaymentOrder@in")
+    "Output credits from service"
+    paymentOrderOut(data: OrderInputOut): PaymentTransaction @field(resolver: "PaymentOrder@out")
+}
+

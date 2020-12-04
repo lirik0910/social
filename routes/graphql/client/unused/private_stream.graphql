@@ -1,0 +1,31 @@
+type PrivateStream {
+    id: ID
+    tariffing: Int
+    status: Int
+    presents_cost: Float
+    started_at: IsoDateTime
+    ended_at: IsoDateTime
+    created_at: IsoDateTime
+    user: User! @belongsTo
+    seller: User! @belongsTo
+}
+
+input PrivateStreamInput {
+    seller_id: ID!
+}
+
+input UpdatePrivateStreamInput {
+    id: ID!
+}
+
+extend type Mutation @middleware(checks: ["auth:api"]) @namespace(field: "App\\GraphQL\\ResolversOld\\PrivateStream") {
+    createPrivateStream(data: PrivateStreamInput!): PrivateStream @field(resolver: "PrivateStreamResolver@resolveCreate")
+    acceptPrivateStream(
+        data: UpdatePrivateStreamInput!
+    ): PrivateStream @field(resolver: "PrivateStreamResolver@resolveAccept") @policy(ability: "update")
+    rejectPrivateStream(
+        data: UpdatePrivateStreamInput!
+    ): PrivateStream @field(resolver: "PrivateStreamResolver@resolveReject") @policy(ability: "update")
+    ignorePrivateStream(data: UpdatePrivateStreamInput!): PrivateStream @field(resolver: "PrivateStreamResolver@resolveIgnore")
+    endPrivateStream(data: UpdatePrivateStreamInput!): PrivateStream @field(resolver: "PrivateStreamResolver@resolveEnd")
+}

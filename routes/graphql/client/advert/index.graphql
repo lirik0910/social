@@ -1,0 +1,36 @@
+#import ./types.graphql
+#import ./inputs.graphql
+
+extend type Query @middleware(checks: ["auth:api", "flag:REQUIRED_FILL_PROFILE:REQUIRED_PHONE_VERIFICATION", "banned"]), @namespace(field: "App\\GraphQL\\Queries\\Advert") {
+    "Responds for one advert"
+    advertResponds(data: AdvertRespondsInput): AdvertRespondsPayload @field(resolver: "AdvertResponds@resolve")
+    "Adverts for one user"
+    userAdverts(data: UserAdvertsInput): UserAdvertsPayload @field(resolver: "UserAdverts@resolve")
+    "Adverts which are responded by authorizd user"
+    userRespondedAdverts(data: UserRespondedAdvertsInput): UserRespondedAdvertsPayload @field(resolver: "UserRespondedAdverts@resolve")
+    "Adverts or feed selection"
+    feedAdverts(data: FeedAdvertsInput): FeedAdvertsPayload @field(resolver: "FeedAdverts@resolve")
+    "Adverts for profile page selection"
+    profileAdverts(id: ID!): [GuestAdvert] @field(resolver: "ProfileAdverts@resolve")
+    "One advert selection"
+    advert(id: ID!): OneAdvert @field(resolver: "Advert@resolve")
+}
+
+extend type Mutation @middleware(checks: ["auth:api", "flag:REQUIRED_FILL_PROFILE:REQUIRED_PHONE_VERIFICATION", "banned"]) @namespace(field: "App\\GraphQL\\Mutations\\Advert") {
+    "Create new advert"
+    createAdvert(
+        data: AdvertInput
+    ): Advert @field(resolver: "CreateAdvert@resolve")
+    "Create respond for advert"
+    createAdvertRespond(
+        data: AdvertRespondInput
+    ): GuestAdvert @field(resolver: "CreateAdvertRespond@resolve")
+    "Approve/choose one advert`s respond"
+    approveAdvertRespond(
+        data: ApproveAdvertRespondInput
+    ): Advert @field(resolver: "ApproveAdvertRespond@resolve")
+    "Cancel active advert"
+    cancelAdvert(id: ID!): Advert @field(resolver: "EndAdvert@resolve")
+    "Cancel advert`s respond by authrized user"
+    cancelAdvertRespond(advert_id: ID!): GuestAdvert @field(resolver: "CancelAdvertRespond@resolve")
+}

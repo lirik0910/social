@@ -1,0 +1,8 @@
+input PresentsInput {
+    "Presents category ID"
+    category_id: ID
+    "Selection`s limit"
+    limit: Int
+    "Selection`s offset"
+    offset: Int
+}

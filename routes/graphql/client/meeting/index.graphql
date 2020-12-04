@@ -1,0 +1,32 @@
+#import ./types.graphql
+#import ./inputs.graphql
+
+extend type Query @middleware(checks: ["auth:api", "flag:REQUIRED_FILL_PROFILE:REQUIRED_PHONE_VERIFICATION", "banned"]) @namespace(field: "App\\GraphQL\\Queries\\Meeting") {
+    "Meeting which ws created by auction"
+    auctionMeeting(id: ID!): Meeting @field(resolver: "AuctionMeeting@resolve")
+    "All meetings for authorized user"
+    meetingsHistory(filter: HistoryFilterInput): MeetingsHistoryPayload @field(resolver: "MeetingsHistory@resolve")
+    "One meeting"
+    meeting(id: ID!): Meeting @field(resolver: "Meeting@resolve") @policy(ability: "view", model: "App\\Models\\Meeting")
+    "Selection of upcoming meetings"
+    upcomingMeetings(data: PaginationInput): UpcomingMeetingsPayload @field(resolver: "UpcomingMeetings@resolve")
+}
+
+extend type Mutation @middleware(checks: ["auth:api", "flag:REQUIRED_FILL_PROFILE:REQUIRED_PHONE_VERIFICATION", "banned"]) @namespace(field: "App\\GraphQL\\Mutations\\Meeting") {
+    "Create new meeting request"
+    createMeeting(
+        data: CreateMeetingInput
+    ): Meeting! @field(resolver: "CreateMeeting@resolve")
+    "Accept meeting"
+    acceptMeeting(
+        id: ID!
+    ): Meeting! @field(resolver: "AcceptMeeting@resolve")
+    "Confirm meeting"
+    confirmMeeting(
+        data: ConfirmMeetingInput
+    ): Meeting! @field(resolver: "ConfirmMeeting@resolve")
+    "Decline meeting"
+    declineMeeting(
+        id: ID!
+    ): Meeting! @field(resolver: "DeclineMeeting@resolve")
+}

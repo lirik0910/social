@@ -1,0 +1,35 @@
+input AllUsersMediaInput {
+    "Selection`s limit"
+    limit: Int
+    "Selection`s offset"
+    offset: Int
+    "Selection`s filter"
+    filter: AllUsersMediaFilterInput
+    "Selection`s sorting direction"
+    order_by_dir: ORDER_DIR
+}
+
+input AllUsersMediaFilterInput {
+    "Media`s user owner"
+    nickname: String
+    "Media`s  mimetype"
+    mimetype: String
+    "Media`s type (from settings)"
+    type: Int
+    "Determine if must be only not banned media"
+    active: Boolean
+}
+
+input BlockMediaInput {
+    "Blocked media`s ID"
+    id: ID!
+    "Blocking reason"
+    reason: String
+}
+
+input RejectVerifyingInput {
+    "Rejected media`s ID"
+    id: ID!
+    "Decline reason"
+    decline_reason: Int!
+}

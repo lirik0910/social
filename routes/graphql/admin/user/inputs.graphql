@@ -1,0 +1,84 @@
+input AllClientUsersInput {
+    "Selection`s limit"
+    limit: Int
+    "Selection`s offset"
+    offset: Int
+    "Selection`s sorting params"
+    order_by: AllClientUsersOrderByInput
+    "Selection`s filtering params"
+    filter: AllClientUsersFilterInput
+}
+
+input AllClientUsersFilterInput {
+    "User`s nickname"
+    nickname: String
+    "User`s sex"
+    sex: Int
+    "User`s country"
+    country: String
+    "Determine if the user must be banned"
+    banned: Boolean
+    "User`s age"
+    age: AgePeriodInput
+    "User`s registration date"
+    created_date: Date
+    "User`s regstration date period"
+    created_date_period: DatePeriod
+}
+
+input AllClientUsersOrderByInput {
+    "Sorting direction"
+    dir: ORDER_DIR
+    "Sorting column"
+    column: CLIENT_USERS_ORDER_BY_COLUMN
+}
+
+input AllAdminUsersInput {
+    "Selection`s limit"
+    limit: Int
+    "Selection`s offset"
+    offset: Int
+    "Selection`s sorting params"
+    order_by: AllAdminUsersOrderByInput
+    "Selection`s filtering params"
+    filter: AllAdminUsersFilterInput
+}
+
+input AllAdminUsersOrderByInput {
+    "Sorting direction"
+    dir: ORDER_DIR
+    "Sorting column"
+    column: ADMIN_USERS_ORDER_BY_COLUMN
+}
+
+input AllAdminUsersFilterInput {
+    "User`s nickname"
+    nickname: String
+    "User`s role"
+    role: Int
+    "User`s permissions"
+    permissions: [Int]
+    "User`s registration date"
+    created_date: String
+    "User`s registration date period"
+    created_date_period: DatePeriod
+}
+
+input TogglePermissionInput {
+    "Changed user`s ID"
+    user_id: ID!
+    "Admin permission value (from settings)"
+    permission: Int!
+}
+
+input ChangeUserRoleInput {
+    user_id: ID!
+    role: Int!
+}
+
+input ChangeAdminPermissionForUserInput {
+    "Changed user`s ID"
+    user_id: ID!
+    "Admin permission ID"
+    permission_id: ID!
+}

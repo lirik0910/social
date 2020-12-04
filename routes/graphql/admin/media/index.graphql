@@ -1,0 +1,16 @@
+#import ./types.graphql
+#import ./inputs.graphql
+
+extend type Mutation @middleware(checks: ["auth:api", "admin:moderator"]) @namespace(field: "App\\GraphQL\\Mutations\\Admin\\Media") {
+    "Accept user`s verification request"
+    acceptVerifying(id: ID): VerifyingPayload @field(resolver: "AcceptVerifying@resolve")
+    "Reject user`s verification request"
+    rejectVerifying(data: RejectVerifyingInput): VerifyingPayload @field(resolver: "RejectVerifying@resolve")
+    "Block user`s media"
+    blockMedia(data: BlockMediaInput): Media @field(resolver: "BlockMedia@resolve")
+}
+
+extend type Query @middleware(checks: ["auth:api", "admin:moderator"]) @namespace(field: "App\\GraphQL\\Queries\\Admin\\Media") {
+    "All users media"
+    allUsersMedia(data: AllUsersMediaInput): AllUsersMediaPayload @field(resolver: "AllUsersMedia@resolve")
+}

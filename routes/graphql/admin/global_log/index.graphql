@@ -1,0 +1,8 @@
+#import ./types.graphql
+#import ./inputs.graphql
+
+extend type Query @middleware(checks: ["auth:api", "admin:moderator"]) @namespace(field: "App\\GraphQL\\Queries\\Admin\\GlobalLog") {
+    "All admin panel logs"
+    globalLogs(data: GlobalLogsInput): GlobalLogsPayload @field(resolver: "GlobalLogs@resolve")
+}
+

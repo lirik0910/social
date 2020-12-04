@@ -1,0 +1,14 @@
+#import ./types.graphql
+#import ./inputs.graphql
+
+extend type Query @middleware(checks: ["auth:api", "flag:REQUIRED_FILL_PROFILE:REQUIRED_PHONE_VERIFICATION", "banned"]) @namespace(field: "App\\GraphQL\\Queries\\Profile") {
+    "One profile selection by user ID"
+    profile(id: ID!): GuestProfile @field(resolver: "Profile@resolve")
+}
+
+extend type Mutation @middleware(checks: ["auth:api"]) @namespace(field: "App\\GraphQL\\Mutations\\Profile") {
+    "Create profile for authorized user"
+    createProfile(data: CreateProfileInput): ProfilePayload @field(resolver: "CreateProfile@resolve") @middleware(checks: ["auth:api", "flag:REQUIRED_PHONE_VERIFICATION"])
+    "Update profile for authorized user"
+    updateProfile(data: ProfileInput): ProfilePayload @field(resolver: "UpdateProfile@resolve") @middleware(checks: ["auth:api", "flag:REQUIRED_FILL_PROFILE:REQUIRED_PHONE_VERIFICATION", "banned"])
+}

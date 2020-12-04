@@ -1,0 +1,16 @@
+#import ./types.graphql
+#import ./inputs.graphql
+
+extend type Query @middleware(checks: ["auth:api", "admin:moderator"]) @namespace(field: "App\\GraphQL\\Queries\\Admin\\VerificationSign") {
+    verificationSigns(data: VerificationSignsInput): VerificationSignsPayload @field(resolver: "VerificationSigns@resolve")
+}
+
+extend type Mutation @middleware(checks: ["auth:api", "admin:moderator"]) @namespace(field: "App\\GraphQL\\Mutations\\Admin\\VerificationSign") {
+    uploadVerificationSigns(files: [Upload!]): [VerificationSign] @field(resolver: "UploadVerificationSigns@resolve")
+
+    updateVerificationSign(data: UpdateAvailabilityInput): VerificationSign @field(resolver: "UpdateVerificationSign@resolve")
+    deleteVerificationSign(id: ID!): Boolean @field(resolver: "DeleteVerificationSign@resolve")
+}
+
+
+

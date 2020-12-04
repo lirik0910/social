@@ -1,0 +1,59 @@
+input CreateFaqCategoryInput {
+    "FAQ category`s title"
+    title: String!
+    "FAQ category`s locale"
+    locale: LOCALE!
+    "FAQ category`s selection`s order"
+    order: Int
+}
+
+input EditFaqCategoryInput {
+    "FAQ category`s ID"
+    id: ID!
+    "FAQ category`s title"
+    title: String
+    "FAQ category`s status (enabled/disabled)"
+    status: Boolean
+    "FAQ category selection`s order"
+    order: Int
+}
+
+input CreateFaqQuestionInput {
+    "Parent FAQ category`s ID"
+    category_id: ID!
+    "Question`s title"
+    title: String!
+    "Question`s text content"
+    content: String!
+    "Question selection`s order"
+    order: Int
+}
+
+input EditFaqQuestionInput {
+    "Question`s ID"
+    id: ID!
+    "Question`s title"
+    title: String
+    "Question`s text content"
+    content: String
+    "Question`s status (enabled/disabled)"
+    status: Boolean
+    "Question selection`s order"
+    order: Int
+}
+
+input FaqCategoriesInput {
+    "Selection`s limit"
+    limit: Int
+    "Selection`s offset"
+    offset: Int
+    "Selection`s filter params"
+    filter: FaqCategoriesFilterInput
+}
+
+input FaqCategoriesFilterInput {
+    "FAQ category`s locale value"
+    locale: LOCALE
+    "FAQ  category`s status (enabled/disabled)"
+    status: Boolean
+}

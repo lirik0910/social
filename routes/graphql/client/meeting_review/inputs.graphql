@@ -1,0 +1,22 @@
+input MeetingReviewInput {
+    "Reviewed meeting`s ID"
+    meeting_id: ID!
+    "Reviews`s value"
+    value: Int!
+    "Reviews`s description"
+    description: String
+    "Determine if review will be anonymous"
+    anonymous: Boolean
+}
+
+input UserMeetingsReviewsInput {
+    "User`s ID"
+    id: ID!
+    "Selection`s limit"
+    limit: Int
+    "Selection`s offset"
+    offset: Int
+    "Selection`s filter params"
+    filter: Int
+}
+

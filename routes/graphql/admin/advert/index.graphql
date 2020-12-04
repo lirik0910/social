@@ -1,0 +1,8 @@
+#import ./types.graphql
+#import ./inputs.graphql
+
+extend type Query @middleware(checks: ["auth:api", "admin:moderator"]) @namespace(field: "App\\GraphQL\\Queries\\Admin\\Advert") {
+    "All adverts for all users"
+    allUsersAdverts(data: AllUsersAdvertsInput): AllUsersAdvertsPayload @field(resolver: "AllUsersAdverts@resolve")
+}
+

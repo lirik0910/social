@@ -1,0 +1,44 @@
+type FaqCategory {
+    "Category`s ID"
+    id: ID
+    "Category`s title"
+    title: String
+    "Category`s slug (uri)"
+    slug: String
+    "Category`s locale value"
+    locale: LOCALE
+    "Category`s status (enabled/disabled)"
+    status: Boolean
+    "Category selection`s order"
+    order: Int
+    "Category`s created date"
+    created_at: IsoDateTime
+    "Category`s updated date"
+    updated_at: IsoDateTime
+}
+
+type FaqQuestion {
+    "Question`s ID"
+    id: ID
+    "Question`s parent category ID"
+    category_id: ID
+    "Question`s title"
+    title: String
+    "Question`s text content"
+    content: String
+    "Question`s locale value"
+    locale: LOCALE
+    "Question`s status (enabled/disabled)"
+    status: Boolean
+    "Question selection`s order"
+    order: Int
+    "Question`s created date"
+    created_at: IsoDateTime
+    "Question`s updated date"
+    updated_at: IsoDateTime
+}
+
+type FaqCategoriesPayload {
+    results: [FaqCategory]
+    total(data: FaqCategoriesFilterInput): Int @field(resolver: "App\\GraphQL\\Queries\\Admin\\Faq\\FaqCategories@getTotal")
+}

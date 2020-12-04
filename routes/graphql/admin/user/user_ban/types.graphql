@@ -1,0 +1,26 @@
+type UserBan {
+    id: ID
+    "Blocking reason"
+    reason: String
+    "Unblocking date"
+    unbanned_at: IsoDateTime
+    "Blocking date"
+    created_at: IsoDateTime
+    "Blocked user"
+    user: User @belongsTo
+}
+
+type BanUserPayload {
+    "Blocked user"
+    user: UserForAdminPanel
+    "Block info record"
+    ban_record: UserBan
+}
+
+
+enum UserBanReason {
+    "A lot of reports"
+    REPORTS @enum(value: "A lot of reports")
+    "User is a frauder"
+    FRAUDER @enum(value: "User is frauder")
+}

@@ -1,0 +1,10 @@
+input BanUserInput {
+    "Blocked user`s ID"
+    id: ID!
+    "Blocking reason"
+    reason: UserBanReason
+    "Custom blocking reason"
+    other_reason: String
+    "Unbanned date"
+    unbanned_date: IsoDateTime
+}

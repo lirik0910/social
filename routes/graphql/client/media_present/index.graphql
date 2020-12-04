@@ -1,0 +1,14 @@
+#import ./types.graphql
+#import ./inputs.graphql
+
+extend type Mutation @middleware(checks: ["auth:api", "flag:REQUIRED_FILL_PROFILE:REQUIRED_PHONE_VERIFICATION", "banned"]) @namespace(field: "App\\GraphQL\\Mutations\\MediaPresent") {
+    "Create media present (send sticker)"
+    createMediaPresent(
+        data: MediaPresentInput!
+    ): MediaPresent @field(resolver: "CreateMediaPresent@resolve") @policy(ability: "createPresent", find: "media_id", model: "App\\Models\\Media", args: ["present_id"])
+}
+
+extend type Query @middleware(checks: ["auth:api", "flag:REQUIRED_FILL_PROFILE:REQUIRED_PHONE_VERIFICATION", "banned"]) @namespace(field: "App\\GraphQL\\Queries\\MediaPresent") {
+    "All presents for one media"
+    mediaPresents(data: MediaPresentsInput): MediaPresentsPayload @field(resolver: "MediaPresents@resolve")
+}

@@ -1,0 +1,27 @@
+input CreateServicePageInput {
+    "Service page title"
+    title: String!
+    "Service text content"
+    content: String!
+    "Service page uri"
+    slug: String
+    "Service page selection`s order"
+    order: Int
+    "Service page locale value"
+    locale: LOCALE!
+}
+
+input UpdateServicePageInput {
+    "Service page ID"
+    id: ID!
+    "Service page title"
+    title: String
+    "Service page text content"
+    content: String
+#    "Service page uri"
+#    slug: String
+    "Service page selection`s order"
+    order: Int
+    "Service page status value"
+    status: Boolean
+}

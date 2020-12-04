@@ -1,0 +1,11 @@
+#import ./types.graphql
+#import ./inputs.graphql
+
+extend type Query @middleware(checks: ["auth:api", "admin:moderator"]) @namespace(field: "App\\GraphQL\\Queries\\Admin\\Auction") {
+    "All auctions for all users"
+    allUsersAuctions(data: AllUsersAuctionsInput): AllUsersAuctionsPayload @field(resolver: "AllUsersAuctions@resolve")
+}
+
+extend type Query @middleware(checks: ["auth:api", "admin:moderator"]) @namespace(field: "App\\GraphQL\\Queries\\Auction") {
+    auctionInfo(id: ID!): AuctionPayload @field(resolver: "Auction@resolve")
+}

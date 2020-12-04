@@ -1,0 +1,19 @@
+input FileUploadInput {
+    "Uploading file`s name"
+    name: String
+    "Uploading file`s mimetype"
+    mimetype: String
+    "Uploading file`s thumbnailx"
+    thumbs: [Thumbnail]
+}
+
+input FileStoreInput {
+    "Uploaded file`s name"
+    name: String!
+    "Uploaded file`s mimetype"
+    mimetype: String!
+    "Uploaded file`s size"
+    size: String!
+    "Uploaded file`s thumbnails"
+    thumbs: [String]
+}

@@ -1,0 +1,23 @@
+type AuctionBid {
+    id: ID
+    "Auction bid`s value"
+    value: Int
+    "Auction owner`s ID"
+    auction_user_id: ID
+    "Auction bid`s created date"
+    created_at: IsoDateTime
+    "Auction bid`s updated date"
+    updated_at: IsoDateTime
+    "User who made this bid"
+    user: ListUser! @belongsTo
+}
+
+type AuctionBidPayload {
+    auction: GuestAuction
+    bid: AuctionBid
+}
+
+type AuctionBidsPayload {
+    results: [AuctionBid]
+    total(id: ID!): Int @field(resolver: "App\\GraphQL\\Queries\\Auction\\AuctionBids@getTotal")
+}

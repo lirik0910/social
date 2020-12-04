@@ -1,0 +1,17 @@
+input PresignUriVerificationPhotoInput {
+    "User`s photo name"
+    name: String!
+    "User`s photo mimetype"
+    mimetype: String!
+}
+
+input StoreVerificationPhotoInput {
+    "Uploaded user`s photo name"
+    name: String!
+    "Uploaded user`s photo mimetype"
+    mimetype: String!
+    "Uploaded user`s photo size"
+    size: String!
+    "Verifying media ID"
+    media_id: ID
+}

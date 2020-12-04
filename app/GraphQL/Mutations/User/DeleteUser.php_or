@@ -1,0 +1,221 @@
+<?php
+
+namespace App\GraphQL\Mutations\User;
+
+use App\Exceptions\GraphQLLogicRestrictException;
+use App\Exceptions\GraphQLSaveDataException;
+use App\Helpers\MediaHelper;
+use App\Models\BlockedUser;
+use App\Models\Media;
+use App\Models\Meeting;
+use App\Models\Subscribe;
+use App\Models\User;
+use App\Models\UserPhotoVerification;
+use Carbon\Carbon;
+use GraphQL\Type\Definition\ResolveInfo;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
+use Nuwave\Lighthouse\Support\Contracts\GraphQLContext;
+
+class DeleteUser
+{
+    /**
+     * Authorized user
+     *
+     * @var User
+     */
+    protected $user;
+
+    /**
+     * Return a value for the field.
+     *
+     * @param  null  $rootValue Usually contains the result returned from the parent field. In this case, it is always `null`.
+     * @param  mixed[]  $args The arguments that were passed into the field.
+     * @param  \Nuwave\Lighthouse\Support\Contracts\GraphQLContext  $context Arbitrary data that is shared between all fields of a single query.
+     * @param  \GraphQL\Type\Definition\ResolveInfo  $resolveInfo Information about the query itself, such as the execution state, the field name, path to the field from the root, and more.
+     * @return mixed
+     * @throws GraphQLSaveDataException
+     * @throws GraphQLLogicRestrictException
+     */
+    public function __invoke($rootValue, array $args, GraphQLContext $context, ResolveInfo $resolveInfo)
+    {
+        $this->user = $context->user();
+
+        if($this->checkActiveCommunications()) {
+            throw new GraphQLLogicRestrictException(__('user.active_communications_exists'), __('Error!'));
+        }
+
+        $deleted_data = $this->getDeletedUserData();
+
+        if (!$this->user->update($deleted_data)) {
+            throw new GraphQLSaveDataException(__('user.failed_to_delete'), __('Error!'));
+        }
+
+        Auth::guard('api')->user()->token()->revoke();
+
+        if (!$this->user->profile()->delete()) {
+            throw new GraphQLSaveDataException(__('profile.failed_to_delete'), _('Error!'));
+        }
+
+        if (!$this->user->meetings_options()->delete()) {
+            throw new GraphQLSaveDataException(__('user.failed_to_delete_meetings_options'), __('Error!'));
+        }
+
+        $this->deleteUserVerificationsPhotos();
+        $this->deleteUserMedia();
+        $this->deleteUserSubscribes();
+        $this->deleteBlockedUsers();
+
+        return true;
+    }
+
+    /**
+     * Delete user`s media
+     *
+     * @throws GraphQLLogicRestrictException
+     * @throws GraphQLSaveDataException
+     */
+    protected function deleteUserMedia()
+    {
+        MediaHelper::deleteFolder(MediaHelper::getS3Path(MediaHelper::FILE_TYPE_MEDIA_AVATAR) . '/' . $this->user->id);
+        MediaHelper::deleteFolder(MediaHelper::getS3Path(MediaHelper::FILE_TYPE_MEDIA_IMAGE) . '/' . $this->user->id);
+
+        if(!$this->user->media()->delete()) {
+            throw new GraphQLSaveDataException(__('media.failed_to_delete'), __('Error'));
+        }
+    }
+
+    /**
+     * Delete user`s verification photos
+     *
+     * @throws GraphQLLogicRestrictException
+     * @throws GraphQLSaveDataException
+     */
+    protected function deleteUserVerificationsPhotos()
+    {
+        MediaHelper::deleteFolder(MediaHelper::getS3Path(MediaHelper::FILE_TYPE_PHOTO_VERIFICATION) . '/' . $this->user->id);
+
+        if (!$this->user->photoVerifications()->delete()) {
+            throw new GraphQLSaveDataException(__('media.failed_to_delete'), __('Error'));
+        }
+    }
+
+    /**
+     * Delete user`s subscribes records and decrement count for other users
+     *
+     * @throws GraphQLSaveDataException
+     */
+    protected function deleteUserSubscribes()
+    {
+        $subscribe = Subscribe
+            ::where('user_id', $this->user->id)
+            ->orWhere('subscriber_id', $this->user->id)
+            ->get();
+
+        $subscribers_ids = $subscribe->where('user_id', $this->user->id)->pluck('subscriber_id')->toArray();
+
+        $subscribes_ids = $subscribe->where('subscriber_id', $this->user->id)->pluck('user_id')->toArray();
+
+        if(!Subscribe
+            ::where('user_id', $this->user->id)
+            ->orWhere('subscriber_id', $this->user->id)->delete()) {
+            throw new GraphQLSaveDataException(__('profile.unsubscribe_failed'), __('Error'));
+        }
+
+        User::whereIn('id', $subscribers_ids)->decrement('subscribes_count');
+        User::whereIn('id', $subscribes_ids)->decrement('subscribers_count');
+    }
+
+    /**
+     * Delete blocked users records
+     *
+     * @return mixed
+     */
+    protected function deleteBlockedUsers()
+    {
+        return BlockedUser
+            ::where('user_id', $this->user->id)
+            ->delete();
+    }
+
+
+
+    /**
+     * Return formatted user data for delete
+     *
+     * @return array
+     */
+    protected function getDeletedUserData()
+    {
+        return [
+            'phone' => $this->user->phone . '_' . Carbon::now()->timestamp,
+            'nickname' => null,
+            'slug' => null,
+            'email' => null,
+            'subscribers_count' => 0,
+            'subscribes_count' => 0,
+            'blocked_count' => 0,
+            'meetings_rating' => 0.00,
+            'deleted_at' => Carbon::now()
+        ];
+    }
+
+    /**
+     * Determine is active communications with other users exists
+     *
+     * @return mixed
+     */
+    protected function checkActiveCommunications()
+    {
+        return DB
+            ::query()
+            ->select(DB::raw(1))
+            ->whereExists(function ($query) {
+                $query
+                    ->select(DB::raw(1))
+                    ->from('auctions')
+                    ->where(function ($query) {
+                        $query
+                            ->where('user_id', '=', $this->user->id)
+                            ->orWhere('last_bid_user_id', '=', $this->user->id);
+                    })
+                    ->whereNull('cancelled_at')
+                    ->where('end_at', '>', DB::raw('NOW()'));
+            })
+            ->orWhereExists(function ($query) {
+                $query
+                    ->select(DB::raw(1))
+                    ->from('adverts')
+                    ->where(function ($query) {
+                        $query
+                            ->where('user_id', '=', $this->user->id)
+                            ->orWhereExists(function ($query) {
+                                $query
+                                    ->select(DB::raw(1))
+                                    ->from('advert_responds')
+                                    ->where('user_id', '=', $this->user->id);
+                            });
+
+                    })
+                    ->where('end_at', '>', DB::raw('NOW()'))
+                    ->whereNull('cancelled_at')
+                    ->whereNull('respond_id');
+            })
+            ->orWhereExists(function ($query) {
+                $query
+                    ->select(DB::raw(1))
+                    ->from('meetings')
+                    ->where(function ($query) {
+                        $query
+                            ->where('user_id', $this->user->id)
+                            ->orWhere('seller_id', $this->user->id);
+                    })
+                    ->where(function ($query) {
+                        $query
+                            ->where('status', '=', Meeting::STATUS_ACCEPTED)
+                            ->orWhere('status', '=', Meeting::STATUS_NEW);
+                    });
+            })
+            ->exists();
+    }
+}

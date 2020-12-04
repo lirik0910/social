@@ -1,0 +1,222 @@
+interface BaseUser {
+    "User`s ID"
+    id: ID
+    "User`s nickname"
+    nickname: String
+    "User`s slug (profile page uri)"
+    slug: String
+    "User`s avatar"
+    avatar: String
+}
+
+type User implements BaseUser {
+    "User`s ID"
+    id: ID
+    "User`s phone"
+    phone: String
+    "User`s nickname"
+    nickname: String
+    "User`s email"
+    email: String
+    "User`s profile background"
+    profile_background: String
+    "User`s role value (from settings)"
+    role: Int
+    "User`s balance"
+    balance: Int
+    "User`s freezed balance"
+    freezed_balance: Int
+    "User`s flags value (falgs from settings)"
+    flags: Int
+    "User`s slug (profile page uri)"
+    slug: String
+    "User`s avatar"
+    avatar: String
+    "User`s avatar thumbs"
+    avatar_thumbs(sizes: [String]): Arr @method(name: "getThumbs")
+    "User`s count of subscribers"
+    subscribers_count: Int
+    "User`s count of subscribes"
+    subscribes_count: Int
+    "User`s count of blocked users"
+    blocked_count: Int
+    "Determine if authorized user has subscribe on this user"
+    is_subscribed: Boolean @method(name: "isSubscribed")
+    "Time to reset confirmation code"
+    time_to_reset: Int
+    "User`s created date (registration date)"
+    created_at: IsoDateTime
+    "User`s updated date"
+    updated_at: IsoDateTime
+    "Created date for responded adverts"
+    created_at_pivot: IsoDateTime
+    "Updated date for subscribe or subscriber record"
+    updated_at_pivot: IsoDateTime
+    "Deleted date for subscribe or subscriber record"
+    deleted_at_pivot: IsoDateTime
+    "User`s profile"
+    profile: Profile @hasOne
+    "User`s meetings option"
+    meetings_options: UserMeetingsOption @hasOne
+    "User`s age (from profile)"
+    age: Int
+    "User`s meeting price (from meetings options)"
+    meeting_price: Int
+    "Param from meetings options"
+    safe_deal_only: Boolean
+    "Determine if the user regitered on service under the week"
+    newbie_status: Boolean
+    "User`s meetings rating"
+    meetings_rating: Float
+    "User`s selected charity`s ID"
+    charity_organization_id: ID
+    "Count of unreaded notifications"
+    unreaded_notifications_count: Int @method(name: "getUnreadedNotificationsCount")
+    "Count of received reports"
+    reports_count: Int
+    #"Permissions for admin panel"
+    #permissions: AdminPermission @belongsToMany
+}
+
+type ProfileUser implements BaseUser @modelClass(class: "\\App\\Models\\User") {
+    "User`s ID"
+    id: ID
+    "User`s flags value (falgs from settings)"
+    flags: Int
+    "User`s nickname"
+    nickname: String
+    "User`s slug (profile page uri)"
+    slug: String
+    "User`s avatar"
+    avatar: String
+    "User`s avatar thumbs"
+    avatar_thumbs(sizes: [String]): Arr @method(name: "getThumbs")
+    "Determine if the user regitered on service under the week"
+    newbie_status: Boolean
+    "User`s meetings rating"
+    meetings_rating: Float
+    "User`s meeting price (from meetings options)"
+    meeting_price: Int
+    "User`s selected charity`s ID"
+    charity_organization_id: ID
+    "User`s count of subscribers"
+    subscribers_count: Int
+    "User`s count of subscribes"
+    subscribes_count: Int
+    "User`s count of blocked users"
+    blocked_count: Int
+    blocked_by_guest: Int
+    "User`s age from profile"
+    age: Int
+    "Determine if authorized user has subscribe on this user"
+    is_subscribed: Boolean @method(name: "isSubscribed")
+    "User`s profile"
+    profile: GuestProfile @hasOne
+}
+
+type ListUser implements BaseUser @modelClass(class: "\\App\\Models\\User") {
+    "User`s ID"
+    id: ID
+    "User`s flags"
+    flags: Int
+    "User`s nickname"
+    nickname: String
+    "User`s slug (uri for profile page)"
+    slug: String
+    "User`s avatar"
+    avatar: String
+    "User`s avatar thumbs"
+    avatar_thumbs(sizes: [String]): Arr @method(name: "getThumbs")
+    "Determine if the user regitered on service under the week"
+    newbie_status: Boolean
+}
+
+type NotificationUser implements BaseUser @modelClass(class: "\\App\\Models\\User") {
+    "User`s ID"
+    id: ID
+    "User`s nickname"
+    nickname: String
+    "User`s slug (profile page uri)"
+    slug: String
+    "User`s avatar"
+    avatar: String
+    "User`s avatar thumbs"
+    avatar_thumbs: Arr
+}
+
+type ModeratorUser @modelClass(class: "\\App\\Models\\User") {
+    "User`s ID"
+    id: ID
+    "User`s nickname"
+    nickname: String
+    "User`s avatar"
+    avatar: String
+    "User`s avatar thumbs"
+    avatar_thumbs: Arr
+}
+
+## SMS ##
+type SmsPayload {
+    "Time for resend availability"
+    time: Int!
+}
+
+type SmsConfirmPayload {
+    "Confirmed phone user"
+    user: User!
+}
+
+## CreaditCart ##
+type CreditCartPayload {
+    data: String
+}
+
+## Subscribe ##
+type SubscribePayload {
+    "User who receive new subscriber"
+    subscribe_user: ProfileUser!
+    "User who make subscribe"
+    subscriber: ProfileUser!
+}
+
+## Block ##
+type BlockedRecordsByIdPayload {
+    results: [ProfileUser]
+    total: Int @field(resolver: "App\\GraphQL\\Queries\\User\\UserBlocksById@getTotal")
+}
+
+type BlockedRecordById {
+    id: ID!
+    blocked_user: ListUser
+    phone_number: String
+    phone_title: String
+    blocked_by_phone: Boolean
+}
+
+type BlockedRecordsByPhonePayload {
+    results: [BlockedRecordByPhone]
+    total: Int @field(resolver: "App\\GraphQL\\Queries\\User\\UserBlocksByPhone@getTotal")
+}
+
+type BlockedRecordByPhone {
+    id: ID!
+    phone_number: String
+    phone_title: String
+    blocked_by_phone: Boolean
+}
+
+type SearchUsersPayload {
+    results: [ProfileUser]
+    total(filter: SearchUsersFilterInput): Int @field(resolver: "App\\GraphQL\\Queries\\User\\SearchUsers@getTotal")
+    max_meeting_price: Int @field(resolver: "App\\GraphQL\\Resolvers\\GetMaxMeetingPrice@resolve")
+}
+
+type GetSubscribersPayload {
+    results: [ProfileUser]
+    total: Int @field(resolver: "App\\GraphQL\\Queries\\User\\Subscribers@getTotal")
+}
+
+type GetSubscribesPayload {
+    results: [ProfileUser]
+    total: Int @field(resolver: "App\\GraphQL\\Queries\\User\\Subscribes@getTotal")
+}

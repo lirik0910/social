@@ -1,0 +1,14 @@
+#import ./types.graphql
+#import ./inputs.graphql
+
+extend type Query @middleware(checks: ["auth:api", "flag:REQUIRED_FILL_PROFILE:REQUIRED_PHONE_VERIFICATION", "banned"]) @namespace(field: "App\\GraphQL\\Queries\\Report") {
+    "Reports where type is auctions"
+    auctionReports(id: ID!): [Report] @field(resolver: "AuctionReports@resolve")
+}
+extend type Mutation @middleware(checks: ["auth:api", "flag:REQUIRED_FILL_PROFILE:REQUIRED_PHONE_VERIFICATION", "banned"]) @namespace(field: "App\\GraphQL\\Mutations\\Report") {
+    "Create report"
+    createReport(
+        data: CreateReportInput
+    ): Report @field(resolver: "CreateReport@resolve") #@policy(ability: "create", args: "user_id")
+}
+

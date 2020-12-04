@@ -1,0 +1,39 @@
+type Call {
+    id: ID!
+    "Parent private call"
+    parent: Call
+    "Private call`s answers"
+    answers: [Call]
+    "User who create call"
+    caller: ListUser!
+    "User who receive call"
+    callee: ListUser!
+    "Action value"
+    action: Int!
+    "Private call`s status"
+    status: Boolean
+    "Private call`s meeting"
+    meeting: Meeting!
+    created_at: IsoDateTime!
+    updated_at: IsoDateTime!
+}
+
+type CallPayload {
+    id: ID!
+    "Parent private call"
+    parent: Call
+    "Private call`s answer"
+    answers: [Call]
+    "User who create private call"
+    caller: ListUser!
+    "User who received private call"
+    callee: ListUser!
+    "Private call action"
+    action: Int!
+    "Private call`s status"
+    status: Boolean
+    "Private call`s meeting"
+    meeting: Meeting!
+    created_at: IsoDateTime!
+    updated_at: IsoDateTime!
+}

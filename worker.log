@@ -1,0 +1,2887 @@
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2019-10-18.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 155
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2019-10-18.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 155
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2019-10-22.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 155
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2019-10-22.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 155
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2019-10-21.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 155
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2019-10-22.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 155
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2019-10-22.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 155
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2019-10-21.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 155
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2019-10-21.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 155
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2019-10-23.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 155
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-02-13.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 155
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-02-28.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 155
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-03-04.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 155
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-04-09.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 155
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-04-10.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 155
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-04-15.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 155
+PHP Fatal error:  Declaration of App\Exceptions\Handler::report(Throwable $exception) must be compatible with Illuminate\Foundation\Exceptions\Handler::report(Exception $e) in /home/lirik0910/projects/buydating/app/Exceptions/Handler.php on line 11
+PHP Fatal error:  Declaration of App\Exceptions\Handler::report(Throwable $exception) must be compatible with Illuminate\Foundation\Exceptions\Handler::report(Exception $e) in /home/lirik0910/projects/buydating/app/Exceptions/Handler.php on line 11
+PHP Fatal error:  Declaration of App\Exceptions\Handler::report(Throwable $exception) must be compatible with Illuminate\Foundation\Exceptions\Handler::report(Exception $e) in /home/lirik0910/projects/buydating/app/Exceptions/Handler.php on line 11
+PHP Fatal error:  Declaration of App\Exceptions\Handler::report(Throwable $exception) must be compatible with Illuminate\Foundation\Exceptions\Handler::report(Exception $e) in /home/lirik0910/projects/buydating/app/Exceptions/Handler.php on line 11
+PHP Fatal error:  Declaration of App\Exceptions\Handler::report(Throwable $exception) must be compatible with Illuminate\Foundation\Exceptions\Handler::report(Exception $e) in /home/lirik0910/projects/buydating/app/Exceptions/Handler.php on line 11
+PHP Fatal error:  Declaration of App\Exceptions\Handler::report(Throwable $exception) must be compatible with Illuminate\Foundation\Exceptions\Handler::report(Exception $e) in /home/lirik0910/projects/buydating/app/Exceptions/Handler.php on line 11
+PHP Fatal error:  Declaration of App\Exceptions\Handler::report(Throwable $exception) must be compatible with Illuminate\Foundation\Exceptions\Handler::report(Exception $e) in /home/lirik0910/projects/buydating/app/Exceptions/Handler.php on line 11
+PHP Fatal error:  Declaration of App\Exceptions\Handler::report(Throwable $exception) must be compatible with Illuminate\Foundation\Exceptions\Handler::report(Exception $e) in /home/lirik0910/projects/buydating/app/Exceptions/Handler.php on line 11
+PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php:803
+Stack trace:
+#0 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Conta in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 805
+PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php:803
+Stack trace:
+#0 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Conta in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 805
+PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php:803
+Stack trace:
+#0 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Conta in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 805
+PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php:803
+Stack trace:
+#0 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Conta in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 805
+PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php:803
+Stack trace:
+#0 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Conta in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 805
+PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php:803
+Stack trace:
+#0 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Conta in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 805
+PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php:803
+Stack trace:
+#0 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Conta in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 805
+PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php:803
+Stack trace:
+#0 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Conta in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 805
+PHP Fatal error:  Declaration of App\Exceptions\Handler::report(Throwable $exception) must be compatible with Illuminate\Foundation\Exceptions\Handler::report(Exception $e) in /home/lirik0910/projects/buydating/app/Exceptions/Handler.php on line 11
+PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php:803
+Stack trace:
+#0 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Conta in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 805
+PHP Fatal error:  Declaration of App\Exceptions\Handler::report(Throwable $exception) must be compatible with Illuminate\Foundation\Exceptions\Handler::report(Exception $e) in /home/lirik0910/projects/buydating/app/Exceptions/Handler.php on line 11
+PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php:803
+Stack trace:
+#0 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Conta in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 805
+PHP Fatal error:  Declaration of App\Exceptions\Handler::report(Throwable $exception) must be compatible with Illuminate\Foundation\Exceptions\Handler::report(Exception $e) in /home/lirik0910/projects/buydating/app/Exceptions/Handler.php on line 11
+PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php:803
+Stack trace:
+#0 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Conta in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 805
+PHP Fatal error:  Declaration of App\Exceptions\Handler::report(Throwable $exception) must be compatible with Illuminate\Foundation\Exceptions\Handler::report(Exception $e) in /home/lirik0910/projects/buydating/app/Exceptions/Handler.php on line 11
+PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php:803
+Stack trace:
+#0 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Conta in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 805
+PHP Fatal error:  Declaration of App\Exceptions\Handler::report(Throwable $exception) must be compatible with Illuminate\Foundation\Exceptions\Handler::report(Exception $e) in /home/lirik0910/projects/buydating/app/Exceptions/Handler.php on line 11
+PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php:803
+Stack trace:
+#0 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Conta in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 805
+PHP Fatal error:  Declaration of App\Exceptions\Handler::report(Throwable $exception) must be compatible with Illuminate\Foundation\Exceptions\Handler::report(Exception $e) in /home/lirik0910/projects/buydating/app/Exceptions/Handler.php on line 11
+PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php:803
+Stack trace:
+#0 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Conta in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 805
+PHP Fatal error:  Declaration of App\Exceptions\Handler::report(Throwable $exception) must be compatible with Illuminate\Foundation\Exceptions\Handler::report(Exception $e) in /home/lirik0910/projects/buydating/app/Exceptions/Handler.php on line 11
+PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php:803
+Stack trace:
+#0 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Conta in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 805
+PHP Fatal error:  Declaration of App\Exceptions\Handler::report(Throwable $exception) must be compatible with Illuminate\Foundation\Exceptions\Handler::report(Exception $e) in /home/lirik0910/projects/buydating/app/Exceptions/Handler.php on line 11
+PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php:803
+Stack trace:
+#0 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Conta in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 805
+PHP Fatal error:  Declaration of App\Exceptions\Handler::report(Throwable $exception) must be compatible with Illuminate\Foundation\Exceptions\Handler::report(Exception $e) in /home/lirik0910/projects/buydating/app/Exceptions/Handler.php on line 11
+PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php:803
+Stack trace:
+#0 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Conta in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 805
+PHP Fatal error:  Declaration of App\Exceptions\Handler::report(Throwable $exception) must be compatible with Illuminate\Foundation\Exceptions\Handler::report(Exception $e) in /home/lirik0910/projects/buydating/app/Exceptions/Handler.php on line 11
+PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php:803
+Stack trace:
+#0 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Conta in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 805
+PHP Fatal error:  Declaration of App\Exceptions\Handler::report(Throwable $exception) must be compatible with Illuminate\Foundation\Exceptions\Handler::report(Exception $e) in /home/lirik0910/projects/buydating/app/Exceptions/Handler.php on line 11
+PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php:803
+Stack trace:
+#0 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Conta in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 805
+PHP Fatal error:  Declaration of App\Exceptions\Handler::report(Throwable $exception) must be compatible with Illuminate\Foundation\Exceptions\Handler::report(Exception $e) in /home/lirik0910/projects/buydating/app/Exceptions/Handler.php on line 11
+PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php:803
+Stack trace:
+#0 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Conta in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 805
+PHP Fatal error:  Declaration of App\Exceptions\Handler::report(Throwable $exception) must be compatible with Illuminate\Foundation\Exceptions\Handler::report(Exception $e) in /home/lirik0910/projects/buydating/app/Exceptions/Handler.php on line 11
+PHP Fatal error:  Declaration of App\Exceptions\Handler::report(Throwable $exception) must be compatible with Illuminate\Foundation\Exceptions\Handler::report(Exception $e) in /home/lirik0910/projects/buydating/app/Exceptions/Handler.php on line 11
+PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php:803
+Stack trace:
+#0 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Conta in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 805
+PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php:803
+Stack trace:
+#0 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Conta in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 805
+PHP Fatal error:  Declaration of App\Exceptions\Handler::report(Throwable $exception) must be compatible with Illuminate\Foundation\Exceptions\Handler::report(Exception $e) in /home/lirik0910/projects/buydating/app/Exceptions/Handler.php on line 11
+PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php:803
+Stack trace:
+#0 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Conta in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 805
+PHP Fatal error:  Declaration of App\Exceptions\Handler::report(Throwable $exception) must be compatible with Illuminate\Foundation\Exceptions\Handler::report(Exception $e) in /home/lirik0910/projects/buydating/app/Exceptions/Handler.php on line 11
+PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php:803
+Stack trace:
+#0 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Conta in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 805
+PHP Fatal error:  Declaration of App\Exceptions\Handler::report(Throwable $exception) must be compatible with Illuminate\Foundation\Exceptions\Handler::report(Exception $e) in /home/lirik0910/projects/buydating/app/Exceptions/Handler.php on line 11
+PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php:803
+Stack trace:
+#0 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Conta in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 805
+PHP Fatal error:  Declaration of App\Exceptions\Handler::report(Throwable $exception) must be compatible with Illuminate\Foundation\Exceptions\Handler::report(Exception $e) in /home/lirik0910/projects/buydating/app/Exceptions/Handler.php on line 11
+PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php:803
+Stack trace:
+#0 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Conta in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 805
+PHP Fatal error:  Declaration of App\Exceptions\Handler::report(Throwable $exception) must be compatible with Illuminate\Foundation\Exceptions\Handler::report(Exception $e) in /home/lirik0910/projects/buydating/app/Exceptions/Handler.php on line 11
+PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php:803
+Stack trace:
+#0 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Conta in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 805
+PHP Fatal error:  Declaration of App\Exceptions\Handler::report(Throwable $exception) must be compatible with Illuminate\Foundation\Exceptions\Handler::report(Exception $e) in /home/lirik0910/projects/buydating/app/Exceptions/Handler.php on line 11
+PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php:803
+Stack trace:
+#0 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Conta in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 805
+PHP Fatal error:  Declaration of App\Exceptions\Handler::report(Throwable $exception) must be compatible with Illuminate\Foundation\Exceptions\Handler::report(Exception $e) in /home/lirik0910/projects/buydating/app/Exceptions/Handler.php on line 11
+PHP Fatal error:  Declaration of App\Exceptions\Handler::report(Throwable $exception) must be compatible with Illuminate\Foundation\Exceptions\Handler::report(Exception $e) in /home/lirik0910/projects/buydating/app/Exceptions/Handler.php on line 11
+PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php:803
+Stack trace:
+#0 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Conta in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 805
+PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php:803
+Stack trace:
+#0 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Conta in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 805
+PHP Fatal error:  Declaration of App\Exceptions\Handler::report(Throwable $exception) must be compatible with Illuminate\Foundation\Exceptions\Handler::report(Exception $e) in /home/lirik0910/projects/buydating/app/Exceptions/Handler.php on line 11
+PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php:803
+Stack trace:
+#0 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Conta in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 805
+PHP Fatal error:  Declaration of App\Exceptions\Handler::report(Throwable $exception) must be compatible with Illuminate\Foundation\Exceptions\Handler::report(Exception $e) in /home/lirik0910/projects/buydating/app/Exceptions/Handler.php on line 11
+PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php:803
+Stack trace:
+#0 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Conta in /home/lirik0910/projects/buydating/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 805
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-05-22.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-05-26.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-05-27.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-05-28.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-05-29.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-06-01.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-06-01.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-06-01.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-06-04.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-06-05.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-06-05.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-06-05.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-06-08.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-06-08.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-06-10.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-06-09.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-06-09.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-06-09.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+      [2m+8 vendor frames [22m
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+
+      [2m+8 vendor frames [22m
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+
+   UnexpectedValueException 
+
+  The stream or file "/home/lirik0910/projects/buydating/storage/logs/laravel-2020-07-31.log" could not be opened: failed to open stream: Permission denied
+
+  at /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:111
+    107|             restore_error_handler();
+    108|             if (!is_resource($this->stream)) {
+    109|                 $this->stream = null;
+    110| 
+  > 111|                 throw new \UnexpectedValueException(sprintf('The stream or file "%s" could not be opened: '.$this->errorMessage, $this->url));
+    112|             }
+    113|         }
+    114| 
+    115|         if ($this->useLocking) {
+
+      [2m+8 vendor frames [22m
+  9   /home/lirik0910/projects/buydating/app/Exceptions/Handler.php:41
+      Illuminate\Foundation\Exceptions\Handler::report(Object(UnexpectedValueException))
+
+      [2m+2 vendor frames [22m
+  12  [internal]:0
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleException(Object(UnexpectedValueException))
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-08-19.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-08-19.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-08-19.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-08-25.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-08-25.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-08-25.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-08-27.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-08-28.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-08-28.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-08-28.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-08-31.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-08-31.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-09-02.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-09-03.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-09-03.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-09-03.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-09-04.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-09-08.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-09-08.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-09-07.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-09-08.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-09-07.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-09-11.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-09-11.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-09-11.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-09-11.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-09-11.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-09-11.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-09-15.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-09-16.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-09-16.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-09-17.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-09-20.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-09-21.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-09-21.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-09-21.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-09-21.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-09-24.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-09-26.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-09-26.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-09-27.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-09-27.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-09-28.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-09-30.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-09-30.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-10-01.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-10-02.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-10-02.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-10-02.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-10-05.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-10-05.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-10-05.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-10-06.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-10-06.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-10-06.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-10-06.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-10-06.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-10-07.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-10-07.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-10-08.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-10-09.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-10-11.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-10-12.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-10-12.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-10-14.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-10-14.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-10-14.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-10-14.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-10-16.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-10-17.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-10-17.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-11-13.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-11-13.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-11-13.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-11-13.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-11-14.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-11-14.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-11-15.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-11-17.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-11-19.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-11-19.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156
+PHP Warning:  unlink(/home/lirik0910/projects/buydating/storage/logs/laravel-2020-11-18.log): No such file or directory in /home/lirik0910/projects/buydating/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 156

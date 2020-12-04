@@ -1,0 +1,10 @@
+type WantWithYou {
+    id: ID
+    "Wanna with you type value (from settings)"
+    type: Int
+    "User who create request"
+    who_want: ListUser! @belongsTo
+    "User who receive request"
+    receiver: ListUser! @belongsTo
+    created_at: IsoDateTime
+}

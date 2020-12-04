@@ -1,0 +1,31 @@
+type Favorite @modelClass(class: "\\App\\Models\\SubscriberUserPublications"){
+    id: ID
+    "Publication`s type"
+    pub_type: PUB_TYPE
+    "Publiation`s ID"
+    pub_id: ID
+    "Publication"
+    pub: Pub @morphTo
+    "Publication`s owner"
+    owner: ListUser
+}
+
+type FavoritesPayload {
+    results: [Favorite]
+    total(type: [PUB_TYPE]): Int @field(resolver: "App\\GraphQL\\Queries\\Favorites\\Favorites@getTotal")
+}
+
+type Owner {
+    owner_user: ListUser
+}
+
+enum PUB_TYPE {
+    AUCTIONS @enum(value: "auctions")
+    ADVERTS @enum(value: "adverts")
+    MEDIA @enum(value: "media")
+}
+
+union Pub @union(resolveType: "App\\GraphQL\\Unions\\Pub")
+    = GuestAuction
+    | GuestAdvert
+    | Media

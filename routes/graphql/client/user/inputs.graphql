@@ -1,0 +1,119 @@
+# SMS
+input RegisterSmsConfirmInput {
+    "Sended confirmation code"
+    code: String!
+}
+
+
+## User options ##
+input ChangePasswordInput {
+    "Old user`s password"
+    old_password: String!
+    "New user`s password"
+    password: String!
+    "New password confirmation"
+    password_confirmation: String!
+}
+
+input ChangeTwoStepVerificationInput {
+    "Setting`s value"
+    two_step_verification: Boolean!
+}
+
+input UpdateNotificationsSetting {
+    "Notification type (from settings)"
+    type: String!
+    "Notification name"
+    notification:String!
+    "Setting`s value"
+    value: Boolean!
+}
+
+## Payment ##
+input CreditCartInput {
+    "Cart number"
+    cart: String!
+    "Cart expired month param"
+    month: String!
+    "Cart expired year"
+    year: String!
+    "Cart cvv"
+    cvv: String!
+}
+
+## Subscribe ##
+input SubscribersInput {
+    "Selection`s limit"
+    limit: Int
+    "Selection`s offset"
+    offset: Int
+}
+
+input SubscribesInput {
+    "Selection`s limit"
+    limit: Int
+    "Selection`s offset"
+    offset: Int
+}
+
+## Block ##
+input BlockUserByPhoneInput {
+    "Blocked phone number"
+    phone_number: String!
+    "Blocked phone`s title"
+    phone_title: String
+}
+
+input BlockedUserRecordsInput {
+    "Selection`s limit"
+    limit: Int
+    "Selection`s offset"
+    offset: Int
+}
+
+input SearchUsersInput {
+    "selection`s limit"
+    limit: Int
+    "Selection`s offset"
+    offset: Int
+    "Selection`s filter params"
+    filter: SearchUsersFilterInput
+    "Selection`s sorting params"
+    order_by: OrderByInput
+}
+
+input SearchUsersFilterInput {
+    "User`s nickname"
+    nickname: String
+    "User profile`s address"
+    address: String
+    "User profile`s age period"
+    age: PeriodFilterInput!
+    "User profile`s height period"
+    height: PeriodFilterInput
+    "User profile`s sex value (from settings)"
+    sex: Int
+    "User profile`s physique value (from settings)"
+    physique: Int
+    "User profile`s eye value (from settings)"
+    eye: Int
+    "User profile`s hair value (from settings)"
+    hair: Int
+    "Determine if user`s meeting cost is free"
+    free_only: Boolean!
+    "Users meeting cost period"
+    meeting_cost: PeriodFilterInput
+    "Determine if searched users must have newbie status"
+    new_only: Boolean
+    "Determine if searched users must have chosen charity for meeting"
+    charity_only: Boolean
+    "Determine if searched users must have photo verification"
+    photo_verified_only: Boolean
+    "Determine if searched users must have only safe deal for meeting"
+    safe_deal_only: Boolean
+}
+
+input UserDevice {
+    device_id: String!
+    device_token: String!
+}

@@ -1,0 +1,11 @@
+#import ./types.graphql
+#import ./inputs.graphql
+
+extend type Mutation @middleware(checks: ["auth:api", "flag:REQUIRED_FILL_PROFILE:REQUIRED_PHONE_VERIFICATION", "banned"]) @namespace(field: "App\\GraphQL\\Mutations\\Call") {
+    "Create private call"
+    createCall(data: CallInput!) : CallPayload! @field(resolver: "CreateCall@resolve")
+    "Answer private call"
+    createAnswer(data: AnswerInput!) : CallPayload! @field(resolver: "CreateAnswer@resolve")
+    "Change private call status"
+    changeCallStatus(data: StatusInput!) : CallPayload! @field(resolver: "ChangeStatus@resolve")
+}

@@ -1,0 +1,20 @@
+type ServicePage {
+    "Service page ID"
+    id: ID
+    "Service page title"
+    title: String
+    "Service page text content"
+    content: String
+    "Service page uri"
+    slug: String
+    "Selection`s order value"
+    order: Int
+    "Service page locale value"
+    locale: LOCALE
+    "Determines if page is available for client users"
+    status: Boolean
+    "Service page created date"
+    created_at: IsoDateTime
+    "Service page updated date"
+    updated_at: IsoDateTime
+}

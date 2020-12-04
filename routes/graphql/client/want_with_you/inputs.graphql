@@ -1,0 +1,6 @@
+input WantWithYouInput {
+    "User`s ID (who will receive wanna with you request)"
+    user_id: ID!
+    "Wanna with you type value (from settings)"
+    type: Int!
+}

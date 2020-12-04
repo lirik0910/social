@@ -1,0 +1,25 @@
+input UserVerificationPhotosInput {
+    "Selection`s limit"
+    limit: Int
+    "Selection`s offset"
+    offset: Int
+    "Selection`s sorting direction"
+    order_by_dir: ORDER_DIR
+    "Selection`s filtering params"
+    filter: UserVerificationPhotosFilterInput
+}
+
+input UserVerificationPhotosFilterInput {
+    "Verification request`s created date"
+    date: Date
+    "Verification request`s created date period"
+    date_period: DatePeriod
+    "Verification request user`s nickname"
+    nickname: String
+    "Verification request`s status value (from settings)"
+    status: Int
+    "Verification request`s moderation declined reason value (from setting)"
+    decline_reason: Int
+}
+
+

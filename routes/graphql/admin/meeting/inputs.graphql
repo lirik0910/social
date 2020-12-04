@@ -1,0 +1,42 @@
+input AllUsersMeetingsInput {
+    "Selection`s limit"
+    limit: Int
+    "Selection`s offset"
+    offset: Int
+    "Selection`s filter"
+    filter: AllUsersMeetingsFilterInput
+    "Selection`s sorting params"
+    order_by: AllUsersMeetingsOrderByInput
+}
+
+input AllUsersMeetingsFilterInput {
+    "Meeting`s status"
+    status: Int
+    "Meeting`s seller (user who earn)"
+    seller: String
+    "Meeting`s buyer (user who pay)"
+    buyer: String
+    "Search for both users nickname (seller and buyer)"
+    user: String
+    "Meeting`s updated date"
+    updated_date: Date
+    "Meeting`s updated date period"
+    updated_date_period: DatePeriod
+    "Determine if meetings must be free"
+    free: Boolean
+    "Meeting`s price period"
+    price_period: PricePeriod
+    "Determine if meetings must have charity relation"
+    charity_only: Boolean
+}
+
+input AllUsersMeetingsOrderByInput {
+    "Selection`s sorting direction"
+    dir: ORDER_DIR
+    "Selection`s sorting column"
+    column: MEETINGS_ORDER_BY_COLUMN
+}
+
+
+
+

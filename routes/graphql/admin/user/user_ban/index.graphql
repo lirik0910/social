@@ -1,0 +1,10 @@
+#import ./types.graphql
+#import ./inputs.graphql
+
+extend type Mutation @middleware(checks: ["auth:api", "admin:moderator"]) @namespace(field: "App\\GraphQL\\Mutations\\Admin\\User") {
+    "Block user"
+    banUser(data: BanUserInput): BanUserPayload @field(resolver: "BanUser@resolve")
+    "Unblock user"
+    unbanUser(id: ID!): UserForAdminPanel @field(resolver: "UnbanUser@resolve")
+}
+

@@ -1,0 +1,54 @@
+input CreatePresentCategoryInput {
+    "Present`s name"
+    name: String!
+    "Present`s image "
+    image: Upload!
+}
+
+input UpdatePresentCategoryInput {
+    "Present`s ID"
+    id: ID!
+    "Present`s name"
+    name: String
+    "Present`s image"
+    image: Upload
+    "Availability status"
+    available: Boolean
+}
+
+input CreatePresentsInput {
+    "Presents category`s ID"
+    category_id: ID!
+    "Uploading presents"
+    presents: [PresentInput]
+}
+
+input PresentInput {
+    "Present`s image"
+    image: Upload!
+    "Present`s price"
+    price: Int
+}
+
+input UpdatePresentInput {
+    "Present`s ID"
+    id: ID!
+    "Present`s image"
+    image: Upload
+    "Present`s price"
+    price: Int
+}
+
+input AllPresentCategoriesInput {
+    "Selection`s limit"
+    limit: Int
+    "Selection`s offset"
+    offset: Int
+    "Selection`s filter"
+    filter: AllPresentCategoriesFilterInput
+}
+
+input AllPresentCategoriesFilterInput {
+    "Availability status"
+    availability: Boolean
+}

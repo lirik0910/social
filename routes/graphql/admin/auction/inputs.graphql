@@ -1,0 +1,30 @@
+input AllUsersAuctionsInput {
+    "Selection`s limit"
+    limit: Int
+    "Selection`s offset"
+    offset: Int
+    "Selection`s filter params"
+    filter: AllUsersAuctionsFilterInput
+    "Selection`s sorting params"
+    order_by: AllUsersAuctionsOrderByInput
+}
+
+input AllUsersAuctionsFilterInput {
+    "Determine if auction must be only for verified users"
+    verified_only: Boolean
+    "Determine if auction has relation with charity orgnization"
+    charity_only: Boolean
+    "Auction`s created date"
+    created_date: Date
+    "Auction`s created date period"
+    created_date_period: DatePeriod
+    "User who create auction"
+    user: String
+}
+
+input AllUsersAuctionsOrderByInput {
+    "Sorting direction"
+    dir: ORDER_DIR
+    "Sorting column"
+    column: AUCTIONS_ORDER_BY_COLUMN
+}

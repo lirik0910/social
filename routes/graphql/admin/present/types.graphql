@@ -1,0 +1,4 @@
+type AllPresentCategoriesPayload {
+    results: [PresentCategory]
+    total(data: AllPresentCategoriesFilterInput): Int @field(resolver: "App\\GraphQL\\Queries\\Admin\\Present\\AllPresentCategories@getTotal")
+}

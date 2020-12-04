@@ -1,0 +1,209 @@
+interface BaseAuction {
+    "Auction`s ID"
+    id: ID
+    "Future meeting`s date"
+    meeting_date: IsoDateTime
+    "Auction`s starting bid"
+    input_bid: Int
+    "Auction`s minimal step for raise bid"
+    minimal_step: Int
+    "Auction`s status value (from settings)"
+    status: Int
+    "Available min age for take a part in auction"
+    min_age: Int
+    "Available max age for take a part in auction"
+    max_age: Int
+    "Auction`s description"
+    description: String
+    "Determine if participants must have photo verification"
+    photo_verified_only: Boolean
+    "Determine if location must be displayed only for winner"
+    location_for_winner_only: Boolean
+    "Determine if auction user`s registration date was less than a week ago"
+    newbie_status: Boolean
+    latest_bid: AuctionBid
+    charity_organization_id: ID
+    outfit: Int
+    created_at: IsoDateTime
+    cancelled_at: IsoDateTime
+    end_at_datetime: IsoDateTime @rename(attribute: "end_at")
+    end_at: Int @timeDiff
+    user: ProfileUser @belongsTo
+}
+
+interface ExtendAuction {
+    city: String
+    participants: Int
+    charity_organization: Charity @belongsTo
+}
+
+type Auction implements BaseAuction & ExtendAuction {
+    id: ID
+    "Future meeting`s location`s latitude"
+    location_lat: Float
+    "Future meeting`s location`s longitude"
+    location_lng: Float
+    "Future meeting`s date"
+    meeting_date: IsoDateTime
+    "Auction`s starting bid"
+    input_bid: Int
+    "Auction`s minimal step for raise bid"
+    minimal_step: Int
+    "Auction`s status value (from settings)"
+    status: Int
+    "Available min age for take a part in auction"
+    min_age: Int
+    "Available max age for take a part in auction"
+    max_age: Int
+    "Auction`s description"
+    description: String
+    "Determine if participants must have photo verification"
+    photo_verified_only: Boolean
+    "Determine if location must be displayed only for winner"
+    location_for_winner_only: Boolean
+    "Determine if auction user`s registration date was less than a week ago"
+    newbie_status: Boolean
+    "Future meeting`s address"
+    address: String
+    "Future meeting`s city"
+    city: String
+    "Auction`s participants"
+    participants: Int
+    "Auction`s latest bid relation"
+    latest_bid: AuctionBid
+    "Chosen auction`s charity organization ID"
+    charity_organization_id: ID
+    "Outfit value (from settings)"
+    outfit: Int
+    "Relation meeting`s status"
+    meeting_status: Int
+    created_at: IsoDateTime
+    "Auction`s cancelled date"
+    cancelled_at: IsoDateTime
+    "Auction`s latest bid value"
+    latest_bid_value: Int
+    "Auction`s ending date"
+    end_at_datetime: IsoDateTime @rename(attribute: "end_at")
+    "Time to auction`s date"
+    end_at: Int @timeDiff
+    user: ProfileUser @belongsTo
+    charity_organization: Charity @belongsTo
+}
+
+type GuestAuction implements BaseAuction @modelClass(class: "\\App\\Models\\Auction") {
+    id: ID
+    "Future meeting`s date"
+    meeting_date: IsoDateTime
+    "Auction`s starting bid"
+    input_bid: Int
+    "Mimal step for raising bid"
+    minimal_step: Int
+    "Auction`s status value (from settings)"
+    status: Int
+    "Available min age for take a part in auction"
+    min_age: Int
+    "Available max age for take a part in auction"
+    max_age: Int
+    "Auction`s description"
+    description: String
+    "Determine if participants must have photo verification"
+    photo_verified_only: Boolean
+    "Determine if location must be displayed only for winner"
+    location_for_winner_only: Boolean
+    "Determine if auction user`s registration date was less than a week ago"
+    newbie_status: Boolean
+    "Auction`s lastest bid relation"
+    latest_bid: AuctionBid
+    "Chosen charity`s ID"
+    charity_organization_id: ID
+    "Outfit value (from settings)"
+    outfit: Int
+    created_at: IsoDateTime
+    "Auction`s cancell date"
+    cancelled_at: IsoDateTime
+    "Future meeting`s city"
+    city: String
+    "Auction`s end date"
+    end_at_datetime: IsoDateTime @rename(attribute: "end_at")
+    "Time to auction`s end"
+    end_at: Int @timeDiff
+    user: ProfileUser @belongsTo
+}
+
+type GuestAuctionPage implements BaseAuction & ExtendAuction {
+    id: ID
+    "Future meeting`s date"
+    meeting_date: IsoDateTime
+    "Auction`s starting bid"
+    input_bid: Int
+    "Minimal step for raising bid"
+    minimal_step: Int
+    "Auction`s status (from settings)"
+    status: Int
+    "Available min age for making bid"
+    min_age: Int
+    "Available max age for making bid"
+    max_age: Int
+    "Auction`s description"
+    description: String
+    "Determine if participants must have photo verification"
+    photo_verified_only: Boolean
+    "Determine if location must be displayed only for winner"
+    location_for_winner_only: Boolean
+    "Determine if auction user`s registration date was less than a week ago"
+    newbie_status: Boolean
+    "Future meeting`s city"
+    city: String
+    "Auction`s participants"
+    participants: Int
+    "Auction`s lastest bid relation"
+    latest_bid: AuctionBid
+    "Chosen charity`s ID"
+    charity_organization_id: ID
+    "Outfit value (from settings)"
+    outfit: Int
+    "Relation meeting`s status"
+    meeting_status: Int
+    created_at: IsoDateTime
+    "Auction`s cancell date"
+    cancelled_at: IsoDateTime
+    "Auction`s end date"
+    end_at_datetime: IsoDateTime @rename(attribute: "end_at")
+    "Time to auction`s date"
+    end_at: Int @timeDiff
+    user: ProfileUser @belongsTo
+    charity_organization: Charity @belongsTo
+}
+
+type AuctionPayload {
+    auction: OneAuction
+    similar: [GuestAuction] @field(resolver: "App\\GraphQL\\Queries\\Auction\\SimilarAuctions")
+}
+
+type AuctionsHistoryPayload {
+    results: [Auction]
+    total(type: Int!, status: Int): Int @field(resolver: "App\\GraphQL\\Queries\\Auction\\AuctionsHistory@getFilterTotal")
+}
+
+type AuctionsPayload {
+    results: [GuestAuction]
+    total(id: ID!): Int @field(resolver: "App\\GraphQL\\Queries\\Auction\\ProfileAuctions@getTotal")
+}
+
+type FeedAuctionsPayload {
+    results: [GuestAuction]
+    border_date: IsoDateTime
+    total(data: FeedTotalInput): Int @field(resolver: "App\\GraphQL\\Queries\\Auction\\FeedAuctions@getTotal")
+}
+
+type SearchAuctionsPayload {
+    results: [GuestAuction]
+    total(filter: SearchAuctionsFilterInput): Int @field(resolver: "App\\GraphQL\\Queries\\Auction\\SearchAuctions@getTotal")
+    minimal_step: Arr @field(resolver: "App\\GraphQL\\Resolvers\\GetAuctionsBorderMinimalStep@resolve")
+    latest_bid: Arr @field(resolver: "App\\GraphQL\\Resolvers\\GetAuctionsBorderLastBid@resolve")
+    border_date: IsoDateTime
+}
+
+union OneAuction @union(resolveType: "App\\GraphQL\\Unions\\OneAuction")
+    = Auction
+    | GuestAuctionPage

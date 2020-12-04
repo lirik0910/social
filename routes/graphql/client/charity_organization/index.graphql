@@ -1,0 +1,14 @@
+#import ./types.graphql
+#import ./inputs.graphql
+
+extend type Query @middleware(checks: ["auth:api", "flag:REQUIRED_FILL_PROFILE:REQUIRED_PHONE_VERIFICATION", "banned"]) @namespace(field: "App\\GraphQL\\Queries\\CharityOrganization") {
+    "All charities available for client users"
+    charities(filter: CharitySearchInput): CharityPayload @field(resolver: "Charities@resolve")
+    "One charity organization"
+    charityOrganization(id: ID!): Charity @field(resolver: "CharityOrganization@resolve")
+}
+
+extend type Mutation @middleware(checks: ["auth:api", "flag:REQUIRED_FILL_PROFILE:REQUIRED_PHONE_VERIFICATION", "banned"]) @namespace(field: "App\\GraphQL\\Mutations\\CharityOrganization") {
+    "Create or update (if exists) authorized user`s charity organization"
+    updateCustomCharityOrganization(data: CustomCharityOrganizationInput): CustomCharityOrganization @field(resolver: "UpdateCustomCharityOrganization@resolve")
+}

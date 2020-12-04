@@ -1,0 +1,26 @@
+#import ./types.graphql
+#import ./inputs.graphql
+#import ./user_photo_verification/index.graphql
+#import ./user_ban/index.graphql
+
+extend type Query @middleware(checks: ["auth:api", "admin:moderator"]) @namespace(field: "App\\GraphQL\\Queries\\Admin\\User") {
+    "All users with client role"
+    allClientUsers(data: AllClientUsersInput): AllClientUsersPayload @field(resolver: "AllClientUsers@resolve")
+    "All users with admins roles"
+    allAdminUsers(data: AllAdminUsersInput): AllAdminUsersPayload @field(resolver: "AllAdminUsers@resolve")
+    "All permissions for admin area"
+    adminPermissions: [AdminPermission] @field(resolver: "AdminPermissions")
+    "All admin permissions for authorized user"
+    userAdminPermissions: [AdminToPermission] @field(resolver: "UserAdminPermissions")
+}
+
+extend type Mutation @middleware(checks: ["auth:api", "admin"]) @namespace(field: "App\\GraphQL\\Mutations\\Admin\\User") {
+    "Toggle user`s admin permission"
+    togglePermission(data: TogglePermissionInput): AdminUser @field(resolver: "TogglePermission@resolve")
+    "Add admin permission for user"
+    addPermissionForUser(data: ChangeAdminPermissionForUserInput): AdminToPermission @field(resolver: "AddPermissionForUser@resolve")
+    "Delete admin permission for user"
+    deletePermissionForUser(data: ChangeAdminPermissionForUserInput): AdminToPermission @field(resolver: "DeletePermissionForUser@resolve")
+    changeUserRole(data: ChangeUserRoleInput): AdminUser @field(resolver: "ChangeUserRole@resolve")
+}
+

@@ -1,0 +1,37 @@
+type MeetingReview {
+    id: ID
+    "Reviews`s user ID"
+    user_id: ID
+    value: Int
+    description: String
+    anonymous: Boolean
+    created_at: IsoDateTime
+    "Reviews`s user"
+    user: ListUser @belongsTo
+    "Reviews`s user years"
+    years: Int
+}
+
+type MeetingReviewAnonymous {
+    "Review`s ID"
+    id: ID
+    "Review`s value"
+    value: Int
+    "Review`s description"
+    description: String
+    "Determine if review is anonymous"
+    anonymous: Boolean
+    "Review`s created date"
+    created_at: IsoDateTime
+}
+
+type UserMeetingReviewsPayload {
+    results: [ProfileMeetingReview]
+    total(id: ID!, filter: Int): Int @field(resolver: "App\\GraphQL\\Queries\\MeetingReview\\ProfileMeetingReviews@getTotal")
+    values_count(id: ID!): Arr @field(resolver: "App\\GraphQL\\Resolvers\\GetUserMeetingsReviewsCount")
+}
+
+union ProfileMeetingReview @union(resolveType: "App\\GraphQL\\Unions\\ProfileMeetingReview")
+    = MeetingReview
+    | MeetingReviewAnonymous
+

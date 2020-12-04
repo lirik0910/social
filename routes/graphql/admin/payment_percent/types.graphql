@@ -1,0 +1,28 @@
+type PaymentPercent {
+    "Percent`s ID"
+    id: ID
+    "Percent`s model value (from settings)"
+    model: Int
+    "Pervent`s value"
+    percent: Int
+    "Percent`s type value (from settings)"
+    type: Int
+    "Percent`s availability status"
+    status: Boolean
+    created_at: IsoDateTime
+    updated_at: IsoDateTime
+    deleted_at: IsoDateTime
+}
+
+type PaymentPercentsPayload {
+    results: [PaymentPercent]
+    total(data: PaymentPercentsFilter): Int @field(resolver: "App\\GraphQL\\Queries\\Admin\\PaymentPercent\\PaymentPercents@getTotal")
+}
+
+
+enum PAYMENT_PERCENTS_ORDER_BY_COLUMN {
+    "Sort by created date"
+    CREATED_DATE @enum(value: "created_at")
+    "Sort by percent value"
+    PERCENT @enum(value: "percent")
+}

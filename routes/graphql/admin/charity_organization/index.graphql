@@ -1,0 +1,23 @@
+#import ./types.graphql
+#import ./inputs.graphql
+
+extend type Mutation @middleware(checks: ["auth:api", "admin:moderator"]) @namespace(field: "App\\GraphQL\\Mutations\\Admin\\CharityOrganization") {
+    "Create native charity organization"
+    createCharityOrganization(data: CreateCharityOrganizationInput): NativeCharityOrganization @field(resolver: "CreateCharityOrganization@resolve")
+    "Update native charity organization"
+    updateNativeCharityOrganization(data: UpdateCharityOrganizationInput): NativeCharityOrganization @field(resolver: "UpdateNativeCharityOrganization@resolve")
+    "Delete native charity organization"
+    deleteNativeCharityOrganization(id: ID!): Boolean @field(resolver: "DeleteNativeCharityOrganization@resolve")
+
+    "Decline user`s charity organization"
+    declineCustomCharityOrganization(data: DeclineCustomCharityOrganizationInput): CustomCharityOrganization @field(resolver: "DeclineCustomCharityOrganization@resolve")
+    "Approve user`s charity organization"
+    approveCustomCharityOrganization(id: ID!): CustomCharityOrganization @field(resolver: "ApproveCustomCharityOrganization@resolve")
+}
+
+extend type Query @middleware(checks: ["auth:api", "admin:moderator"]) @namespace(field: "App\\GraphQL\\Queries\\Admin\\CharityOrganization") {
+    "All user`s charity organizations"
+    customCharityOrganizations(data: CustomCharityOrganizationsInput): CustomCharityOrganizationsPayload @field(resolver: "CustomCharityOrganizations@resolve")
+    "All native charity organization"
+    nativeCharityOrganizations(data: NativeCharityOrganizationsInput): NativeCharityOrganizationsPayload @field(resolver: "NativeCharityOrganizations@resolve")
+}

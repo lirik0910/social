@@ -1,0 +1,50 @@
+input PaymentPercentInput {
+    "Pecent model value (from settings)"
+    model: Int!
+    "Percent value"
+    percent: Int!
+    "Percent type value (from settings)"
+    type: Int!
+    "Percent availability status"
+    status: Boolean!
+}
+
+input EditPaymentPercentInput {
+    "Edited percent ID"
+    id: ID!
+    "Percent model value (from settings)"
+    model: Int!
+    "Percent value"
+    percent: Int!
+    "Percent type (from settings)"
+    type: Int!
+    "Availability status"
+    status: Boolean!
+}
+
+input PaymentPercents {
+    "Selection`s limit"
+    limit: Int
+    "Selection`s offset"
+    offset: Int
+    "Selection`s filter"
+    filter: PaymentPercentsFilter
+    "Selection`s sorting params"
+    order_by: PaymentPercentsOrderByInput
+}
+
+input PaymentPercentsFilter {
+    "Percent`s model value (from settings)"
+    model: Int
+    "Percent`s type (from settings)"
+    type: Int
+    "Availability status"
+    status: Boolean
+}
+
+input PaymentPercentsOrderByInput {
+    "Sorting direction"
+    dir: ORDER_DIR
+    "Sorting column"
+    column: PAYMENT_PERCENTS_ORDER_BY_COLUMN
+}

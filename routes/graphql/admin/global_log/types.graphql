@@ -1,0 +1,21 @@
+type GlobalLog {
+    "Log`s ID"
+    id: ID
+    "Log`s mutation value (from settings)"
+    mutation: Int
+    "Log`s section value (from settings)"
+    section: Int
+    "Action`s data"
+    data: String
+    "User`s ID (who made action)"
+    user_id: ID
+    "User`s nickname (who made action)"
+    user_nickname: String
+    "Action`s created date"
+    created_at: IsoDateTime
+}
+
+type GlobalLogsPayload {
+    results: [GlobalLog]
+    total(data: GlobalLogsFilterInput): Int @field(resolver: "App\\GraphQL\\Queries\\Admin\\GlobalLog\\GlobalLogs@getTotal")
+}

@@ -1,0 +1,15 @@
+input CreateAuctionBidInput {
+    "Auction`s ID"
+    auction_id: ID
+    "Auction bid`s value"
+    value: Int
+}
+
+input AuctionBidsInput {
+    "Auction`s ID"
+    id: ID!
+    "Selection`s limit"
+    limit: Int
+    "Selection`s offset"
+    offset: Int
+}

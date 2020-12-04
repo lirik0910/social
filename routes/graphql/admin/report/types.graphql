@@ -1,0 +1,4 @@
+type AllReportsPayload {
+    results: [Report]
+    total(data: AllReportsTotalInput): Int @field(resolver: "App\\GraphQL\\Queries\\Admin\\Report\\AllReports@getTotal")
+}

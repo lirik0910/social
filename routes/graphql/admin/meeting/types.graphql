@@ -1,0 +1,13 @@
+type AllUsersMeetingsPayload {
+    results: [Meeting]
+    total(data: AllUsersMeetingsFilterInput): Int @field(resolver: "App\\GraphQL\\Queries\\Admin\\Meeting\\AllUsersMeetings@getTotal")
+}
+
+enum MEETINGS_ORDER_BY_COLUMN {
+    "Sorting by created date"
+    CREATED_DATE @enum(value: "created_at")
+    "Sorting by updated date"
+    UPDATED_DATE @enum(value: "updated_at")
+    "Sorting by meeting`s price"
+    PRICE @enum(value: "price")
+}

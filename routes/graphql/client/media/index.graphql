@@ -1,0 +1,33 @@
+#import ./types.graphql
+#import ./inputs.graphql
+
+extend type Query @middleware(checks: ["auth:api", "flag:REQUIRED_FILL_PROFILE:REQUIRED_PHONE_VERIFICATION", "banned"]) @namespace(field: "App\\GraphQL\\Queries\\Media") {
+    "All user`s avatars"
+    avatars(id: ID!): [Media] @field(resolver: "Avatars@resolve")
+    "Selection for feed page"
+    feedMedia(data: FeedMediaInput): FeedMediaPayload @field(resolver: "FeedMedia@resolve")
+    "Selection for profile page"
+    profileMedia(data: ProfileMediaInput): ProfileMediaPayload @field(resolver: "ProfileMedia@resolve")
+    "All media for authorized user"
+    userMedia(filter: BasePaginationFilter): MediaPayload @field(resolver: "UserMedia@resolve")
+    "One media"
+    media(id: ID!): Media @field(resolver: "Media@resolve")
+}
+
+extend type Mutation @middleware(checks: ["auth:api", "flag:REQUIRED_FILL_PROFILE:REQUIRED_PHONE_VERIFICATION", "banned"]) @namespace(field: "App\\GraphQL\\Mutations\\Media") {
+    "Generate presignbed urls for uploading files on AWS"
+    generateFilePresignedUrls(data: FileUploadGenerateInput!) : [PresignedUrl] @field(resolver: "GenerateFilePresignedUrls@resolve")
+
+    "Store uploaded file to DB"
+    fileUploadStore(data: FileUploadStoreInput!) : [Media] @field(resolver: "FileUploadStore@resolve")
+    "Update media"
+    updateMedia(data: FileUpdateInput!) : Media! @field(resolver: "UpdateMedia@resolve") @policy(ability: "update", model: "App\\Models\\Media")
+    "Delete media"
+    deleteMedia(data: FileDeleteInput!) : Boolean @field(resolver: "DeleteMedia@resolve") @policy(ability: "delete", model: "App\\Models\\Media")
+
+    #generateAvatarPresignedUrls(data: File!): Arr @field(resolver: "GenerateAvatarPresignedUrls@resolve")
+    "Store uploaded avatar to DB"
+    avatarUploadStore(data: FileInfo!): AvatarStorePayload @field(resolver: "AvatarUploadStore@resolve")
+    "Make view for media (for avatars)"
+    viewMedia(id: ID!): Int @field(resolver: "ViewMedia@resolve")
+}

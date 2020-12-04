@@ -1,0 +1,17 @@
+#import ./common/index.graphql
+#import ./user/index.graphql
+#import ./verification_sign/index.graphql
+#import ./media/index.graphql
+#import ./profiles_background/index.graphql
+#import ./present/index.graphql
+#import ./charity_organization/index.graphql
+#import ./meeting/index.graphql
+#import ./auction/index.graphql
+#import ./advert/index.graphql
+#import ./report/index.graphql
+#import ./payment_percent/index.graphql
+#import ./payment_transaction/index.graphql
+#import ./global_log/index.graphql
+#import ./support/index.graphql
+#import ./faq/index.graphql
+#import ./service_page/index.graphql

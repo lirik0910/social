@@ -1,0 +1,26 @@
+type Notification {
+    id: String
+    "Notification`s type"
+    type: String
+    notifiable_type: String
+    notifiable_id: Int
+    "Notification`s body"
+    data: NotificationData
+    read_at: IsoDateTime
+    created_at: IsoDateTime
+}
+
+type NotificationsPayload {
+    results: [Notification]
+    total: Int @field(resolver: "App\\GraphQL\\Queries\\Notification\\Notifications@getTotal")
+    totalUnreaded: Int @field(resolver: "App\\GraphQL\\Queries\\Notification\\Notifications@getUnreadedTotal")
+}
+
+type NotificationData {
+    "User`s info (who made action)"
+    user: NotificationUser
+    "Notification`s info"
+    info: Arr
+    "Notification`s type"
+    type: String
+}

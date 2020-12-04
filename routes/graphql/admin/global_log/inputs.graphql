@@ -1,0 +1,26 @@
+input GlobalLogsInput {
+    "Selection`s limit"
+    limit: Int
+    "Selection`s offset"
+    offset: Int
+    "Selection`s filter"
+    filter: GlobalLogsFilterInput
+    "Selection`s sorting direction"
+    order_by_dir: ORDER_DIR
+}
+
+input GlobalLogsFilterInput {
+    "Mutation value (from settings)"
+    mutation: Int
+    "Section of admin panel (from settings)"
+    section: Int
+    "User`s nickname (who made action)"
+    user_nickname: String
+    "User`s ID (who made action)"
+    user_id: ID
+    "Action`s created date"
+    created_date: Date
+    "Action`s created date period"
+    created_date_period: DatePeriod
+}
+

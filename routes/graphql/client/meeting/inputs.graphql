@@ -1,0 +1,36 @@
+input CreateMeetingInput {
+    "User`s ID (who receive meeting request)"
+    seller_id: ID!
+    "Meeting`s location latitude"
+    location_lat: Float!
+    "Meeting`s location longitude"
+    location_lng: Float!
+    "Meeting date"
+    meeting_date: IsoDateTime! @toUTC
+    "Meeting`s price"
+    price: Int!
+    "Outfit value (from settings)"
+    outfit: Int!
+    "Determine if deal must be safe"
+    safe_deal: Boolean!
+    "Meeting`s address"
+    address: String!
+}
+
+input ConfirmMeetingInput {
+    "Meeting`s ID"
+    id: ID!
+    "Meeting`s confirmation code"
+    confirmation_code: String!
+}
+
+input HistoryFilterInput {
+    "Meeting`s type (sell, buy)"
+    type: Int!
+    "Meeting`s status (from settings)"
+    status: Int
+    "Selection`s limit"
+    limit: Int
+    "Selection`s offset"
+    offset: Int
+}

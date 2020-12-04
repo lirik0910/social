@@ -1,0 +1,26 @@
+input OrderInputIn {
+    "Order transaction amount"
+    amount: Int!
+}
+
+input OrderInputOut {
+    "Order transaction amount"
+    amount: Int!
+    "User`s card number"
+    card: String!
+}
+
+input ViewOrdersInput {
+    "Selection`s limit"
+    limit: Int
+    "Selection`s offset"
+    offset: Int
+}
+
+input ViewTransactionsInput {
+    "Selection`s limit"
+    limit: Int
+    "Selection`s offset"
+    offset: Int
+}
+

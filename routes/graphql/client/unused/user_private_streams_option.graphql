@@ -1,0 +1,26 @@
+type UserPrivateStreamsOption {
+    id: ID!
+    tariffing: Int
+    receive_calls: Boolean
+    min_age: Int
+    max_age: Int
+    photo_verified_only: Boolean
+    fully_verified_only: Boolean
+    created_at: IsoDateTime!
+    updated_at: IsoDateTime!
+    user: GuestUser! @belongsTo
+    #schedules: UserPrivateStreamsSchedule @hasMany
+}
+
+input PrivateStreamsOptionInput {
+    tariffing: Int
+    receive_calls: Boolean
+    min_age: Int
+    max_age: Int
+    photo_verified_only: Boolean
+    fully_verified_only: Boolean
+}
+
+extend type Mutation @middleware(checks: ["auth:api"]) @namespace(field: "App\\GraphQL\\ResolversOld\\UserOptions") {
+    updatePrivateStreamsOption(data: PrivateStreamsOptionInput): UserPrivateStreamsOption @field(resolver: "UserPrivateStreamsOptionResolver@resolveUpdate")
+}

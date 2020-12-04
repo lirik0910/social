@@ -1,0 +1,15 @@
+#import ./types.graphql
+#import ./inputs.graphql
+
+
+extend type Query @middleware(checks: ["auth:api", "flag:REQUIRED_FILL_PROFILE:REQUIRED_PHONE_VERIFICATION", "banned"]) @namespace(field: "App\\GraphQL\\Queries\\Notification") {
+    "All notifications for authorized user"
+    notifications(data: PaginationInput): NotificationsPayload @field(resolver: "Notifications@resolve")
+}
+
+extend type Mutation @middleware(checks: ["auth:api", "flag:REQUIRED_FILL_PROFILE:REQUIRED_PHONE_VERIFICATION", "banned"]) @namespace(field: "App\\GraphQL\\Mutations\\Notification") {
+    "Read one notification"
+    readOneNotification(id: ID): Boolean @field(resolver: "ReadNotification@resolve")
+    "Read all notifications"
+    readAllNotifications: Boolean @field(resolver: "ReadNotifications")
+}

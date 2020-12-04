@@ -1,0 +1,14 @@
+input MeetingsOptionsInput {
+    "Minimal price for requesting meeting with this user"
+    minimal_price: Int
+    "Min available age for requesting meeting with this user"
+    min_age: Int
+    "Max available age for requesting meeting with this user"
+    max_age: Int
+    "Determine if requested meeting must be with safe deal"
+    safe_deal_only: Boolean
+    "Determine if only photo verified users can request meeting with this user"
+    photo_verified_only: Boolean
+    "Chosen charity organization ID"
+    charity_organization_id: ID
+}

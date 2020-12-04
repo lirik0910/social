@@ -1,0 +1,16 @@
+type PresentCategory {
+    id: ID
+    "Category name"
+    name: String
+    "Category image name"
+    image: String
+    "Category image url"
+    image_uri: String
+    "Category image size"
+    size: String
+    "Category image mimetype"
+    mimetype: String
+    "Determine if category is available for client users"
+    available: Boolean
+    created_at: IsoDateTime
+}

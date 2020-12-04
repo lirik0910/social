@@ -1,0 +1,36 @@
+#import ./types.graphql
+#import ./inputs.graphql
+
+extend type Query @middleware(checks: ["auth:api", "flag:REQUIRED_FILL_PROFILE:REQUIRED_PHONE_VERIFICATION", "banned"]) @namespace(field: "App\\GraphQL\\Queries\\Chat") {
+    "All messages for one chat room"
+    chatRoomMessages(data: ChatRoomMessagesInput!) : ChatRoomMessagesPayload! @field(resolver: "RoomMessages@resolve")
+    "All active chat rooms for authorized user"
+    chatRooms(data: ChatRoomsInput!): ChatRoomsPayload @field(resolver: "ChatRooms@resolve")
+    "Count of all unreaded messages"
+    activeRoomsCountUnreadedMessages: Int @field(resolver: "ActiveRoomsCountUnreadedMessages@resolve")
+    "History of all chat payments"
+    chatRoomPayments(data: ChatRoomPaymentsInput!) : ChatRoomsHistoryPayload! @field(resolver: "RoomsPayments@resolve")
+    "One chat room"
+    getRoom(data: GetChatRoomInput!): ChatRoom @field(resolver: "GetRoom@resolve")
+}
+
+extend type Mutation @middleware(checks: ["auth:api", "flag:REQUIRED_FILL_PROFILE:REQUIRED_PHONE_VERIFICATION", "banned"]) @namespace(field: "App\\GraphQL\\Mutations\\Chat") {
+    "Create chat room"
+    createChatRoom(data: CreateChatRoomInput!): ChatRoom! @field(resolver: "CreateRoom@resolve")
+    "Edit chat room"
+    editChatRoom(data: EditChatRoomInput!): ChatRoom! @field(resolver: "EditRoom@resolve")
+    "Create chat message"
+    createChatMessage(data: CreateChatMessageInput!) : ChatMessage! @field(resolver: "CreateMessage@resolve")
+    "Update chat message"
+    updateChatMessage(id: ID!) : ChatMessage! @field(resolver: "UpdateMessage@resolve")
+    "Read all messages in one chat room"
+    updateChatRoomMessagesStatus(id: ID!) : Boolean @field(resolver: "UpdateRoomMessagesStatus@resolve")
+    "Read all messages in all chat rooms"
+    updateChatAllRoomsMessagesStatus: Boolean @field(resolver: "UpdateAllRoomsMessagesStatus@resolve")
+    "Update all chat prices and set them default price (from user settings)"
+    updateToDefaultRoomPrice : Boolean @field(resolver: "UpdateToDefaultRoomPrice@resolve")
+    "Accept edits for chat room"
+    acceptChatRoomEdits(id: ID!): ChatRoom! @field(resolver: "AcceptRoomEdits@resolve")
+    "End chat conversation"
+    endChatRoom(id: ID!): ChatRoom! @field(resolver: "EndChat@resolve")
+}

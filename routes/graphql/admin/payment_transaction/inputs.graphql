@@ -1,0 +1,43 @@
+input AllPaymentTransactionsInput {
+    "Selection`s limit"
+    limit: Int
+    "Selection`s offset"
+    offset: Int
+    "Selection`s sorting params"
+    order_by: AllPaymentTransactionsOrderByInput
+    "Selection`s filter params"
+    filter: AllPaymentTransactionsFilterInput
+}
+
+input AllPaymentTransactionsFilterInput {
+    "From user nickname"
+    from_user: String
+    "To user nickname"
+    to_user: String
+    "Transaction`s source type"
+    source_type: SourceType
+    "Transaction`s status"
+    status: Int
+    "Transaction`s amount period"
+    amount_period: PricePeriod
+    "Transaction`s updated date"
+    updated_date: Date
+    "Transaction`s updated date period"
+    updated_date_period: DatePeriod
+}
+
+input AllPaymentTransactionsOrderByInput {
+    "Selection`s sorting direction"
+    dir: ORDER_DIR
+    "Selection`s sorting column"
+    column: PAYMENT_TRANSACTIONS_ORDER_BY_COLUMN
+}
+
+input ChangeUserBalanceInput {
+    "Changed user`s ID"
+    id: ID!
+    "Amount of credits"
+    amount: Int!
+    "Transaction`s type (from settings)"
+    type: Int!
+}

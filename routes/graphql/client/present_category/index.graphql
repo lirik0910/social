@@ -1,0 +1,7 @@
+#import ./types.graphql
+#import ./inputs.graphql
+
+extend type Query @middleware(checks: ["auth:api", "flag:REQUIRED_FILL_PROFILE:REQUIRED_PHONE_VERIFICATION", "banned"]) @namespace(field: "App\\GraphQL\\Queries\\Present") {
+    "All presents categories"
+    presentCategories: [PresentCategory] @field(resolver: "PresentCategories")
+}

@@ -1,0 +1,78 @@
+type PaymentOrder {
+    id: ID!
+    "Payment`s user"
+    user: User!
+    "Payment`s amount"
+    amount: Float!
+    "Payment`s amount with conversation"
+    amount_with_rate: Float!
+    "Payment`s type"
+    type: String!
+    created_at: IsoDateTime
+    updated_at: IsoDateTime
+}
+
+type PaymentTransaction {
+    id: ID!
+    "Payment`s amount"
+    amount: Int!
+    "Payment`s currency"
+    currency: String!
+    "Payment`s pay_url"
+    pay_url: String
+}
+
+type ViewOrdersPayload {
+    results: [PaymentOrder]
+    total: Int @field(resolver: "App\\GraphQL\\Queries\\Payment\\UserPaymentOrders@getTotal")
+}
+
+type Payments {
+    id: ID
+    "Transaction`s from user`s ID"
+    from_user_id: ID
+    "Transacton`s to user`s ID"
+    to_user_id: ID
+    "Transaction`s source type"
+    source_type: SourceType
+    "Transaction`s source ID"
+    source_id: ID
+    "Transaction`s source"
+    source: Source
+    "Transaction`s amount"
+    amount: Int!
+    "Transaction`s fee/penalty percent"
+    percent: Int
+    "Transaction`s amount after fee/penalty"
+    value: Int
+    "Transaction`s type (from settings)"
+    type: Int!
+    "Transaction`s status"
+    status: Int!
+    created_at: IsoDateTime
+    updated_at: IsoDateTime
+}
+
+type ViewTransactionsPayload {
+    results: [Payments]
+    total: Int @field(resolver: "App\\GraphQL\\Queries\\Payment\\UserPaymentTransactions@getTotal")
+}
+
+enum SourceType {
+    auctionBids @enum(value: "auctionBids")
+    paymentOrders @enum(value: "paymentOrders")
+    mediaPresents @enum(value: "mediaPresents")
+    meetings @enum(value: "meetings")
+    adverts @enum(value: "adverts")
+    advertResponds @enum(value: "advertResponds")
+    adminPaymentTransactions @enum(value: "adminPaymentTransactions")
+}
+
+union Source @union(resolveType: "App\\GraphQL\\Unions\\PaymentSource")
+    = PaymentOrder
+    | AuctionBid
+    | MediaPresent
+    | Meeting
+    | Advert
+    | AdvertRespond
+    | AdminPaymentTransaction

@@ -1,0 +1,15 @@
+type AllUsersAdvertsPayload {
+    "Selection`s results"
+    results: [Advert]
+    "Selection`s results count"
+    total(data: AllUsersAdvertsFilterInput): Int @field(resolver: "App\\GraphQL\\Queries\\Admin\\Advert\\AllUsersAdverts@getTotal")
+}
+
+enum ADVERTS_ORDER_BY_COLUMN {
+    "Advert`s created date"
+    CREATED_DATE @enum(value: "created_at")
+    "Advert`s participants count"
+    PARTICIPANTS @enum(value: "participants")
+    "Advert`s price value"
+    PRICE @enum(value: "price")
+}

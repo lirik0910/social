@@ -1,0 +1,100 @@
+interface BaseChatRoom {
+    "Chat room`s ID"
+    id: ID
+    "User who init chat and pay"
+    user_id: ID
+    "User who earn credits"
+    seller_id: ID
+    "Overall count of earned credits"
+    amount: Int
+    "Ednded date"
+    ended_at: IsoDateTime
+    "User`s ID (who end chat room)"
+    ended_by_id: ID
+    updated_at: IsoDateTime
+}
+
+type ChatRoom implements BaseChatRoom{
+    "Chat room`s ID"
+    id: ID
+    "User who init chat and pay"
+    user_id: ID
+    "User who earn credits"
+    seller_id: ID
+    "Chat message cost"
+    price: Int
+    "Overall count of earned credits"
+    amount: Int
+    "Chat room status (enable/disable)"
+    status: Boolean
+    "Ednded date"
+    ended_at: IsoDateTime
+    "User`s ID (who end chat room)"
+    ended_by_id: ID
+    updated_at: IsoDateTime
+    "Last created message relation"
+    last_message: ChatMessage
+    "Count of unreaded messages"
+    unread: Int
+    user: ListUser @belongsTo
+    seller: ListUser @belongsTo
+}
+
+type ChatRoomHistory implements BaseChatRoom{
+    "Chat room`s ID"
+    id: ID
+    "User who init chat and pay"
+    user_id: ID
+    "User who earn credits"
+    seller_id: ID
+    "Overall count of earned credits"
+    amount: Int
+    "Ednded date"
+    ended_at: IsoDateTime
+    "User`s ID (who end chat room)"
+    ended_by_id: ID
+    updated_at: IsoDateTime
+    user: ListUser @belongsTo
+    seller: ListUser @belongsTo
+}
+
+type ChatMessage {
+    "Message`s ID"
+    id: ID
+    "Room`s ID"
+    room_id: ID
+    "User`s ID (who create message)"
+    user_id: ID
+    "Message type (from settings)"
+    type: Int
+    "Message`s text"
+    message: String
+    "Message status (viewed or not)"
+    status: Boolean
+    created_at: IsoDateTime
+    updated_at: IsoDateTime
+    "Chat message cost"
+    price: Int
+}
+
+type ChatRoomsPayload {
+    results: [ChatRoom]
+    total(data: ActiveChatRoomFilterInput): Int @field(resolver: "App\\GraphQL\\Queries\\Chat\\ChatRooms@getTotal")
+}
+
+type ChatRoomMessagesPayload {
+    room: ChatRoom
+    results: [ChatMessage]
+    total(id: ID!): Int @field(resolver: "App\\GraphQL\\Queries\\Chat\\RoomMessages@getTotal")
+}
+
+type ChatRoomsHistoryPayload {
+    results: [ChatRoomHistory]
+    total(data: ChatRoomPaymentsFilterInput): Int @field(resolver: "App\\GraphQL\\Queries\\Chat\\RoomsPayments@getTotal")
+    messages_balance: MessagesBalance @field(resolver: "App\\GraphQL\\Resolvers\\GetAllChatRoomsPaymentBalance@resolve")
+}
+
+type MessagesBalance {
+    earned: Int
+    spent: Int
+}

@@ -1,0 +1,8 @@
+input CreateReportInput {
+    "Reported type"
+    reported_type: ReportedType
+    "Reported ID"
+    reported_id: Int!
+    "Report`s reason"
+    reason: Int!
+}

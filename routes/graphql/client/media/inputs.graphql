@@ -1,0 +1,90 @@
+input FileUploadGenerateInput {
+    "Uploading file`s type value (from settings)"
+    type: Int!
+    "Uploading files"
+    files: [File!]
+}
+
+input File {
+    "Upload file`s name"
+    name: String!
+    "Upload file`s mimetype"
+    mimetype: String!
+    "Upload file`s (media) description"
+    description: String
+    "Media thumbs"
+    thumbs: [Thumbnail]
+}
+
+input Thumbnail {
+    "Thumbnail`s prefix (size)"
+    prefix: String
+    "File`s name"
+    name: String
+    "File`s mimetype"
+    mimetype: String
+}
+
+input FileUploadStoreInput {
+    "Uploaded media type (from settings)"
+    type: Int!
+    "Uploaded files"
+    files: [FileInfo!]
+}
+
+input FileInfo {
+    "File`s name"
+    name: String!
+    "File`s mimetype"
+    mimetype: String!
+    "File`s size"
+    size: String!
+    "File`s description"
+    description: String
+    "File`s thumbnails"
+    thumbs: [String]
+}
+
+input FileUpdateInput {
+    "Update media`s ID"
+    id: ID!
+    "Update media`s description"
+    description: String
+}
+
+input FileDeleteInput {
+    "Delete media`s ID"
+    id: ID!
+}
+
+input GetOneMediaInput {
+    "Media`s ID"
+    id: ID!
+}
+
+input FeedMediaInput {
+    "Viewed media IDs"
+    viewed_ids: [ID]
+    "Media owner`s location"
+    location: LocationInput
+    "Media owner`s location radius"
+    search_radius: Int
+    "Selection`s limit"
+    limit: Int
+}
+
+input BasePaginationFilter {
+    "Selection`s limit"
+    limit: Int
+    "Selection`s offset"
+    offset: Int
+}
+
+input ProfileMediaInput {
+    "Profile owner ID"
+    id: ID!
+    "Selection`s limit"
+    limit: Int
+    "Selection`s offset"
+    offset: Int
+}

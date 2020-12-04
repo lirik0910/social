@@ -1,0 +1,68 @@
+type NativeCharityOrganization implements CharityOrganization @modelClass(class: "\\App\\Models\\CharityOrganization") {
+    "Charity`s ID"
+    id: ID
+    "Charity`s image"
+    image: String
+    "Charity`s image url"
+    image_url: String
+    "Charity`s name"
+    name: String
+    "Charity`s description"
+    description: String
+    "Charity`s credits balance. Sum of all earned credits for this charity"
+    balance: Int
+    "Charity`s website link"
+    link: String
+    "Charity`s payment receiver name"
+    payment_receiver_name: String
+    "Charity`s payment receiver address"
+    payment_receiver_address: String
+    "Charity`s payment receiver bank"
+    payment_receiver_bank: String
+    "Charity`s payment receiver bank account"
+    payment_receiver_bank_account: String
+    "Charity`s payment receiver bank address"
+    payment_receiver_bank_address: String
+    "Charity`s availability status"
+    available: Boolean
+    created_at: IsoDateTime
+    updated_at: IsoDateTime
+}
+
+type CustomCharityOrganization implements CharityOrganization @modelClass(class: "\\App\\Models\\CharityOrganization") {
+    "Charity`s ID"
+    id: ID
+    "Charity user`s ID"
+    user_id: ID
+    "Charity`s name"
+    name: String
+    "Charity`s description"
+    description: String
+    "Charity`s website link"
+    link: String
+    "Charity`s moderation status"
+    moderation_status: Int
+    "Charity`s moderation declined reason"
+    moderation_declined_reason: Int
+    created_at: IsoDateTime
+    updated_at: IsoDateTime
+    "User who owned this charity"
+    user: ListUser @belongsTo
+}
+
+type CustomCharityOrganizationsPayload {
+    results: [CustomCharityOrganization]
+    total(data: CustomCharityOrganizationsFilterInput): Int @field(resolver: "App\\GraphQL\\Queries\\Admin\\CharityOrganization\\CustomCharityOrganizations@getTotal")
+}
+
+type NativeCharityOrganizationsPayload {
+    results: [NativeCharityOrganization]
+    total(data: NativeCharityOrganizationsFilterInput): Int @field(resolver: "App\\GraphQL\\Queries\\Admin\\CharityOrganization\\NativeCharityOrganizations@getTotal")
+}
+
+enum NATIVE_CHARITY_ORDER_BY {
+    "Sorting by created_at"
+    DATE @enum(value: "created_at")
+    "Sorting by balance value"
+    BALANCE @enum(value: "balance")
+}

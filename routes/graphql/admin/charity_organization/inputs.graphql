@@ -1,0 +1,98 @@
+input CreateCharityOrganizationInput {
+    "Charity`s image"
+    image: Upload
+    "Charity`s name"
+    name: String!
+    "Charity`s decription"
+    description: String!
+    "Charity`s link"
+    link: String
+    "Charity`s payment receiver name"
+    payment_receiver_name: String
+    "Charity`s payment receiver address"
+    payment_receiver_address: String
+    "Charity`s payment receiver bank account"
+    payment_receiver_bank_account: String
+    "Charity`s payment receiver bank"
+    payment_receiver_bank: String
+    "Charity`s payment receiver bank address"
+    payment_receiver_bank_address: String
+}
+
+
+input UpdateCharityOrganizationInput {
+    "Charity`s ID"
+    id: ID!
+    "Charity`s image"
+    image: String
+    "Charity`s name"
+    name: String!
+    "Charity`s decription"
+    description: String!
+    "Charity`s link"
+    link: String
+    "Charity`s payment receiver name"
+    payment_receiver_name: String
+    "Charity`s payment receiver address"
+    payment_receiver_address: String
+    "Charity`s payment receiver bank account"
+    payment_receiver_bank_account: String
+    "Charity`s payment receiver bank"
+    payment_receiver_bank: String
+    "Charity`s payment receiver bank address"
+    payment_receiver_bank_address: String
+    "Charity`s availability toggle"
+    available: Boolean
+}
+
+input CustomCharityOrganizationsInput {
+    "Selection`s limit"
+    limit: Int
+    "Selection`s offset"
+    offset: Int
+    "Selection`s sorting direction"
+    order_by_dir: ORDER_DIR
+    "Selection`s filter"
+    filter: CustomCharityOrganizationsFilterInput
+}
+
+input CustomCharityOrganizationsFilterInput {
+    "Charity user`s nickname"
+    nickname: String
+    "Charity`s name"
+    name: String
+    "Charity`s moderation status"
+    moderation_status: Int
+}
+
+input NativeCharityOrganizationsInput {
+    "Selection`s limit"
+    limit: Int
+    "Selection`s offset"
+    offset: Int
+    "Selection`s sorting params"
+    order_by: NativeCharityOrganizationsOrderByInput
+    "Selection`s filter"
+    filter: NativeCharityOrganizationsFilterInput
+}
+
+input NativeCharityOrganizationsFilterInput {
+    "Charity`s availability status"
+    available: Boolean
+    "Charity`s name"
+    name: String
+}
+
+input NativeCharityOrganizationsOrderByInput {
+    "Selection`s sorting direction"
+    dir: ORDER_DIR
+    "Selection`s sorting column"
+    column: NATIVE_CHARITY_ORDER_BY
+}
+
+input DeclineCustomCharityOrganizationInput {
+    "User`s charity ID"
+    id: ID!
+    "User`s charity moderation declined reason"
+    moderation_declined_reason: Int!
+}

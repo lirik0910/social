@@ -1,0 +1,4 @@
+type ProfilesBackgroundsPayload {
+    results: [ProfilesBackground]
+    total(data: ProfilesBackgroundsFilterInput): Int @field(resolver: "App\\GraphQL\\Queries\\Admin\\ProfilesBackground\\ProfilesBackgrounds@getTotal")
+}

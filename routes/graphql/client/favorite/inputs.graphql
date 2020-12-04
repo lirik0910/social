@@ -1,0 +1,8 @@
+input FavoritesInput {
+    "Publication`s type"
+    type: [PUB_TYPE]
+    "Selection`s limit"
+    limit: Int
+    "Selecton`s offset"
+    offset: Int
+}

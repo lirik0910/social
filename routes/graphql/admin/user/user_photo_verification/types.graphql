@@ -1,0 +1,31 @@
+type UserVerificationPhoto {
+    "Verification request`s ID"
+    id: ID
+    "File name"
+    name: String
+    "File url"
+    image_url: String
+    "Verification request`s sign"
+    verification_sign: VerificationSign
+    "Verification request`s expiring time"
+    verification_expired_at: IsoDateTime
+    "Verification request`s moderation declined reason"
+    decline_reason: Int
+    "Verification request`s moderation status"
+    status: Int
+    "Verification request`s created date"
+    created_at: IsoDateTime
+    "Verification request`s user"
+    user: User @belongsTo
+    "Verification request`s media"
+    media: Media @belongsTo
+    "Verification request`s sign"
+    verification_sign: VerificationSign @belongsTo
+}
+
+type UserVerificationPhotosPayload {
+    results: [UserVerificationPhoto]
+    total(data: UserVerificationPhotosFilterInput): Int @field(resolver: "App\\GraphQL\\Queries\\Admin\\User\\UserVerificationPhotos@getTotal")
+}
+
+

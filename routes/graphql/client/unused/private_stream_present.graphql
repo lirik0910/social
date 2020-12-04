@@ -1,0 +1,24 @@
+type PrivateStreamPresent {
+    id: ID
+    price: Float
+    created_at: IsoDateTime
+    user: User! @belongsTo
+    present: Present! @belongsTo
+    media: Media! @belongsTo
+}
+
+input PrivateStreamPresentInput {
+    private_stream_id: Int!
+    present_id: Int!
+}
+
+type PrivateStreamPresentPayload {
+    present: PrivateStreamPresent
+    private_stream: PrivateStream
+}
+
+extend type Mutation @middleware(checks: ["auth:api"]) @namespace(field: "App\\GraphQL\\ResolversOld\\PrivateStream") {
+    createPrivateStreamPresent(
+        data: PrivateStreamPresentInput!
+    ): PrivateStreamPresentPayload @field(resolver: "PrivateStreamPresentResolver@resolveCreate")
+}

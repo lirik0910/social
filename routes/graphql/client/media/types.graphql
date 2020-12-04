@@ -1,0 +1,126 @@
+interface BaseMedia {
+    "Media ID"
+    id: ID
+    "Media file`s name"
+    name: String
+    "Media file`s mimetype"
+    mimetype: String
+    "Media file`s size"
+    size: String
+    "Media description"
+    description: String
+    "Media file`s uri"
+    media_uri: String
+    "Media type (from settings)"
+    type: Int
+    "Media status (from settings)"
+    status: Int
+    "Media created date"
+    created_at: IsoDateTime
+    user: ListUser! @belongsTo
+    "File`s thumbnails"
+    thumbs(sizes: [String]): Arr @method(name: "getThumbs")
+}
+
+type Media implements BaseMedia {
+    "Media ID"
+    id: ID
+    "Media file`s name"
+    name: String
+    "Media file`s mimetype"
+    mimetype: String
+    "Media file`s size"
+    size: String
+    "Media description"
+    description: String
+    "Media file`s uri"
+    media_uri: String
+    "Media type (from settings)"
+    type: Int
+    "Media status (from settings)"
+    status: Int
+    "Media created date"
+    created_at: IsoDateTime
+    "Media views count"
+    views: Int
+    "Media blocked reason"
+    reason: String
+    "File`s thumbnail"
+    thumbs(sizes: [String]): Arr @method(name: "getThumbs")
+    user: ListUser! @belongsTo
+}
+
+type GuestMedia implements BaseMedia {
+    "Media ID"
+    id: ID
+    "Media file`s name"
+    name: String
+    "Media file`s mimetype"
+    mimetype: String
+    "Media file`s size"
+    size: String
+    "Media description"
+    description: String
+    "Media file`s uri"
+    media_uri: String
+    "Media type (from settings)"
+    type: Int
+    "Media status (from settings)"
+    status: Int
+    "Media created date"
+    created_at: IsoDateTime
+    user: ListUser! @belongsTo
+    "File`s thumbnail"
+    thumbs(sizes: [String]): Arr @method(name: "getThumbs")
+}
+
+type AvatarStorePayload {
+    user: ListUser!
+    avatar: Media!
+    thums: Arr
+}
+
+type MediaPayload {
+    results: [Media]
+    total: Int @field(resolver: "App\\GraphQL\\Queries\\Media\\UserMedia@getFilterTotal")
+}
+
+type FeedMediaPayload {
+    results: [Media]
+    total(data: FeedTotalInput): Int @field(resolver: "App\\GraphQL\\Queries\\Media\\FeedMedia@getTotal")
+}
+
+type ProfileMediaPayload {
+    results: [Media]
+    total(id: ID!): Int @field(resolver: "App\\GraphQL\\Queries\\Media\\ProfileMedia@getTotal")
+}
+
+type PresignedUrl {
+    "Temporary name"
+    rname: String!
+    "File`s name"
+    name: String!
+    "File`s uri"
+    uri: String!
+    "Media`s decription"
+    description: String
+    "File`s mimetype"
+    mimetype: String!
+    "File`s thumbnail"
+    thumbs: [FileThumb]
+}
+
+type FileThumb {
+    "Prefix (size, type)"
+    prefix: String
+    "Temporary name"
+    rname: String
+    "File`s name"
+    name: String
+    "File`s mimetype"
+    mimetype: String
+    "File`s uri"
+    uri: String
+}
+
+

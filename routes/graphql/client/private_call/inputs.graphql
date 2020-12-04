@@ -1,0 +1,23 @@
+input CallInput {
+    "User`s ID (who received call)"
+    callee_user_id: ID!
+    "Meeting`s ID"
+    meeting_id: ID!
+}
+
+input AnswerInput {
+    "Private call`s ID"
+    parent_id: ID!
+    "User`s ID (who create call)"
+    caller_user_id: ID!
+    "User`s ID (who received call)"
+    callee_user_id: ID!
+    "Action value"
+    action: Int!
+    "Meeting`s ID"
+    meeting_id: ID!
+}
+
+input StatusInput {
+    id: ID!
+}

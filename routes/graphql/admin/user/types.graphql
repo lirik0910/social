@@ -1,0 +1,114 @@
+type UserForAdminPanel implements BaseUser {
+    "User`s ID"
+    id: ID
+    "User`s nickname"
+    nickname: String
+    "User`s slug (profile uri)"
+    slug: String
+    "User`s avatar"
+    avatar: String
+    "User`s avatar thumbnails"
+    avatar_thumbs(sizes: [String]): Arr @method(name: "getThumbs")
+    "User`s email"
+    email: String
+    "User`s selected profile background"
+    profile_background: String
+    "User`s role value (from settings)"
+    role: Int
+    "User`s balance"
+    balance: Int
+    "User`s freezed balance"
+    freezed_balance: Int
+    "User`s flags params"
+    flags: Int
+    "User`s subcribers count"
+    subscribers_count: Int
+    "User`s subscribes count"
+    subscribes_count: Int
+    "User`s blocked count"
+    blocked_count: Int
+    "Determine if auth user is subscriber for this user"
+    is_subscribed: Boolean @method(name: "isSubscribed")
+    time_to_reset: Int
+    "User`s registration date"
+    created_at: IsoDateTime
+    "User`s updated date"
+    updated_at: IsoDateTime
+    "Created date for responded adverts"
+    created_at_pivot: IsoDateTime
+    "Updated date for subscribe or subscriber record"
+    updated_at_pivot: IsoDateTime
+    "Deleted date for subscribe or subscriber record"
+    deleted_at_pivot: IsoDateTime
+    "User`s profile"
+    profile: Profile @hasOne
+    "User`s meetings options"
+    meetings_options: UserMeetingsOption @hasOne
+    "User`s default meeting price"
+    meeting_price: Int
+    "Determine if meetings must be only with safe deal"
+    safe_deal_only: Boolean
+    "Determine if the user regitered on service under the week"
+    newbie_status: Boolean
+    "User`s meetings rating"
+    meetings_rating: Float
+    "User`s selected charity`s ID"
+    charity_organization_id: ID
+    "User`s unreaded notifications count"
+    unreaded_notifications_count: Int @method(name: "getUnreadedNotificationsCount")
+    "Ban record ID"
+    ban_id: ID
+    "Curent ban record relation"
+    current_ban: UserBan @belongsTo
+}
+
+type AdminUser @modelClass(class: "\\App\\Models\\User") {
+    "Admin user`s ID"
+    id: ID
+    "Admin user`s nickname"
+    nickname: String
+    "Admin user`s permissions"
+    permissions: Int
+    "Admin user`s role"
+    role: Int
+}
+
+type AllClientUsersPayload {
+    results: [UserForAdminPanel]
+    total(data: AllClientUsersFilterInput): Int @field(resolver: "App\\GraphQL\\Queries\\Admin\\User\\AllClientUsers@getTotal")
+}
+
+type AllAdminUsersPayload {
+    results: [AdminUser]
+    total(data: AllAdminUsersFilterInput): Int @field(resolver: "App\\GraphQL\\Queries\\Admin\\User\\AllAdminUsers@getTotal")
+}
+
+enum CLIENT_USERS_ORDER_BY_COLUMN {
+    "User`s created date"
+    CREATED_DATE @enum(value: "users.created_at")
+    "User`s balance value"
+    BALANCE @enum(value: "users.balance")
+    "User`s meetings rating value"
+    RATING @enum(value: "users.meetings_rating")
+    "User`s reports count"
+    REPORTS_COUNT @enum(value: "users.reports_count")
+    "User`s age"
+    AGE @enum(value: "profiles.age")
+}
+
+enum ADMIN_USERS_ORDER_BY_COLUMN {
+    "User`s registation date"
+    CREATED_DATE @enum(value: "users.created_at")
+}
+
+type AdminToPermission {
+    user_id: ID
+    permission_id: ID
+    created_at: IsoDateTime
+}
+
+type AdminPermission {
+    id: ID
+    title: String
+    description: String
+}

@@ -1,0 +1,20 @@
+type PrivateStreamMessage {
+    id: ID
+    body: String
+    created_at: IsoDateTime
+    user: User! @belongsTo
+    recipient: User! @belongsTo
+    private_stream: PrivateStream! @belongsTo
+}
+
+input PrivateStreamMessageInput {
+    recipient_id: Int!
+    private_stream_id: Int!
+    body: String!
+}
+
+extend type Mutation @middleware(checks: ["auth:api"]) @namespace(field: "App\\GraphQL\\ResolversOld\\PrivateStream") {
+    createPrivateStreamMessage(
+        data: PrivateStreamMessageInput!
+    ): PrivateStreamMessage @field(resolver: "PrivateStreamMessageResolver@resolveCreate") @policy(ability: "createMessage", model: "App\\Models\\PrivateStream", find: "private_stream_id")
+}

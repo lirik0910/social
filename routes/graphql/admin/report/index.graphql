@@ -1,0 +1,15 @@
+#import ./types.graphql
+#import ./inputs.graphql
+
+extend type Mutation @middleware(checks: ["auth:api", "admin:moderator"]) @namespace(field: "App\\GraphQL\\Mutations\\Admin\\Report") {
+    "Approve user`s report"
+    approveReport(data: ApproveReportInput): [Report] @field(resolver: "ApproveReport@resolve")
+    "Decline user`s report"
+    declineReport(data: DeclineReportInput): [Report] @field(resolver: "DeclineReport@resolve")
+}
+
+extend type Query @middleware(checks: ["auth:api", "admin:moderator"]) @namespace(field: "App\\GraphQL\\Queries\\Admin\\Report") {
+    "All users reports"
+    allReports(data: AllReportsInput): AllReportsPayload @field(resolver: "AllReports@resolve")
+}
+

@@ -1,0 +1,27 @@
+type UserPrivateStreamsSchedule {
+    id: ID!
+    weekday: Int
+    period_from: Time
+    period_to: Time
+    options: UserPrivateStreamsOption @belongsTo
+}
+
+input PrivatStreamScheduleInput {
+    weekday: Int!
+    period_from: Time!
+    period_to: Time!
+}
+
+input PrivatStreamScheduleUpdateInput {
+    id: ID!
+    weekday: Int!
+    period_from: Time!
+    period_to: Time!
+}
+
+extend type Mutation @middleware(checks: ["auth:api"]) @namespace(field: "App\\GraphQL\\ResolversOld\\UserOptions") {
+    createPrivateStreamsSchedule(data: PrivatStreamScheduleInput): [UserPrivateStreamsSchedule] @field(resolver: "UserPrivateStreamsScheduleResolver@resolveCreate")
+    updatePrivateStreamsSchedule(data: PrivatStreamScheduleUpdateInput): [UserPrivateStreamsSchedule] @field(resolver: "UserPrivateStreamsScheduleResolver@resolveUpdate")
+}
+
+

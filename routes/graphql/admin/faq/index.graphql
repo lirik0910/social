@@ -1,0 +1,24 @@
+#import ./types.graphql
+#import ./inputs.graphql
+
+extend type Query @middleware(checks: ["auth:api", "admin:moderator"]) @namespace(field: "App\\GraphQL\\Queries\\Admin\\Faq") {
+    "All FAQ categories selection"
+    faqCategories(data: FaqCategoriesInput): FaqCategoriesPayload @field(resolver: "FaqCategories@resolve")
+    "Questions for one category"
+    categoryQuestions(id: ID!): [FaqQuestion] @field(resolver: "CategoryQuestions@resolve")
+}
+
+extend type Mutation @middleware(checks: ["auth:api", "admin:moderator"]) @namespace(field: "App\\GraphQL\\Mutations\\Admin\\Faq") {
+    "Create FAQ category"
+    createFaqCategory(data: CreateFaqCategoryInput): FaqCategory! @field(resolver: "CreateFaqCategory@resolve")
+    "Update FAQ category"
+    editFaqCategory(data: EditFaqCategoryInput): FaqCategory! @field(resolver: "EditFaqCategory@resolve")
+    "Delete FAQ category"
+    deleteFaqCategory(id: ID!): FaqCategory @field(resolver: "DeleteFaqCategory@resolve")
+    "Create FAQ question"
+    createFaqQuestion(data: CreateFaqQuestionInput): FaqQuestion! @field(resolver: "CreateFaqQuestion@resolve")
+    "Update FAQ question"
+    editFaqQuestion(data: EditFaqQuestionInput): FaqQuestion! @field(resolver: "EditFaqQuestion@resolve")
+    "Delete FAQ question"
+    deleteFaqQuestion(id: ID!): FaqQuestion @field(resolver: "DeleteFaqQuestion@resolve")
+}

@@ -1,0 +1,34 @@
+input LocationInput {
+    "Location`s latiude"
+    lat: Float
+    "Location`s longitude"
+    lng: Float
+}
+
+input PaginationInput {
+    "Selection`s limit"
+    limit: Int
+    "Selection`s offset"
+    offset: Int
+}
+
+input OrderByInput {
+    "Selection`s sorting column value"
+    column: Int
+    "Selection`s sorting direction"
+    dir: ORDER_DIR
+}
+
+input PeriodFilterInput {
+    "Filtering period`s from value"
+    from: Int
+    "Filtering period`s to value"
+    to: Int
+}
+
+input FeedTotalInput {
+    "Selection location`s params"
+    location: LocationInput
+    "Selection searching radius"
+    search_radius: Int
+}

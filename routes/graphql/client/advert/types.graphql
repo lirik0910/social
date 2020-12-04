@@ -1,0 +1,168 @@
+interface BaseAdvert {
+    id: ID
+    "Future meeting`s location latitude"
+    location_lat: Float
+    "Future meeting`s location longitude"
+    location_lng: Float
+    "Future meeting`s adress"
+    address: String
+    "Future meeting`s date"
+    meeting_date: IsoDateTime
+    "Advert`s type"
+    type: Int
+    "Future meeting`s price"
+    price: Int
+    "Available min age for advert`s respond user"
+    min_age: Int
+    "Availabe max age for adver`s respond user"
+    max_age: Int
+    "Determine if responded user must be photo verified"
+    photo_verified_only: Boolean
+    "Determine if deal must be safe"
+    safe_deal_only: Boolean
+    "Outfit value (from settings)"
+    outfit: Int
+    "Responded user`s ID"
+    respond_user_id: ID
+    "Advert`s created date"
+    created_at: IsoDateTime
+    "Advert`s cancelled date"
+    cancelled_at: IsoDateTime
+    "Advert`s ending date"
+    end_at_datetime: IsoDateTime @rename(attribute: "end_at")
+    "Time to advert`s end"
+    end_at: Int @timeDiff
+    "Advert`s charity ID"
+    charity_organization_id: ID
+    "Advert`s user"
+    user: ProfileUser @belongsTo
+}
+
+type Advert implements BaseAdvert {
+    "Advert`s ID"
+    id: ID
+    "Future meeting`s location latitude"
+    location_lat: Float
+    "Future meeting`s location longitude"
+    location_lng: Float
+    "Future meeting`s adress"
+    address: String
+    "Future meeting`s date"
+    meeting_date: IsoDateTime
+    "Advert`s type"
+    type: Int
+    "Future meeting`s price"
+    price: Int
+    "Available min age for advert`s respond user"
+    min_age: Int
+    "Availabe max age for adver`s respond user"
+    max_age: Int
+    "Determine if responded user must be photo verified"
+    photo_verified_only: Boolean
+    "Determine if deal must be safe"
+    safe_deal_only: Boolean
+    "Outfit value (from settings)"
+    outfit: Int
+    "Count of advert`s participants (responds)"
+    participants: Int
+    "Aproved/chosen respond`s ID"
+    respond_id: ID
+    "Approved/chosen user`s ID"
+    respond_user_id: ID
+    "Advert`s created date"
+    created_at: IsoDateTime
+    "Advert`s cancelled date"
+    cancelled_at: IsoDateTime
+    "Advert`s ending date"
+    end_at_datetime: IsoDateTime @rename(attribute: "end_at")
+    "Time to advert`s end"
+    end_at: Int @timeDiff
+    "Advert`s user"
+    user: ProfileUser @belongsTo
+    "Advert`s charity"
+    charity_organization: Charity @belongsTo
+    "Advert`s chaity ID"
+    charity_organization_id: ID
+    "Respond`s created date"
+    created_at_pivot: IsoDateTime
+    "Chosen/approved respond`s user"
+    respond_user: ListUser @belongsTo
+}
+
+type GuestAdvert implements BaseAdvert @modelClass(class: "\\App\\Models\\Advert") {
+    id: ID
+    "Future meeting`s location latitude"
+    location_lat: Float
+    "Future meeting`s location longitude"
+    location_lng: Float
+    "Future meeting`s adress"
+    address: String
+    "Future meeting`s date"
+    meeting_date: IsoDateTime
+    "Advert`s type"
+    type: Int
+    "Future meeting`s price"
+    price: Int
+    "Available min age for advert`s respond user"
+    min_age: Int
+    "Availabe max age for adver`s respond user"
+    max_age: Int
+    "Determine if responded user must be photo verified"
+    photo_verified_only: Boolean
+    "Determine if deal must be safe"
+    safe_deal_only: Boolean
+    "Outfit value (from settings)"
+    outfit: Int
+    "Advert`s created date"
+    created_at: IsoDateTime
+    "Advert`s cancelled date"
+    cancelled_at: IsoDateTime
+    "Advert`s ending date"
+    end_at_datetime: IsoDateTime @rename(attribute: "end_at")
+    "Time to advert`s end"
+    end_at: Int @timeDiff
+    "Advert`s charity ID"
+    charity_organization_id: ID
+    "Chosen/approved resond`s user ID"
+    respond_user_id: ID
+    "Advert`s user"
+    user: ProfileUser @belongsTo
+}
+
+type AdvertRespond {
+    id: ID
+    "Responded advert`s ID"
+    advert_id: ID
+    "Respond`s user ID"
+    user_id: ID
+    "Responded advert`s user ID"
+    advert_user_id: ID
+    "Respond`s created date"
+    created_at: IsoDateTime
+}
+
+type AdvertRespondsPayload {
+    results: [ListUser]
+    total(id: ID!): Int @field(resolver: "App\\GraphQL\\Queries\\Advert\\AdvertResponds@getTotal")
+}
+
+type UserAdvertsPayload {
+    results: [Advert]
+    total(type: Int, status: Int): Int @field(resolver: "App\\GraphQL\\Queries\\Advert\\UserAdverts@getTotal")
+}
+
+type UserRespondedAdvertsPayload {
+    results: [GuestAdvert]
+    total: Int @field(resolver: "App\\GraphQL\\Queries\\Advert\\UserRespondedAdverts@getTotal")
+}
+
+type FeedAdvertsPayload {
+    results: [GuestAdvert]
+    "Selection`s deadline date for adverts"
+    border_date: IsoDateTime
+    total(data: FeedTotalInput): Int @field(resolver: "App\\GraphQL\\Queries\\Advert\\FeedAdverts@getTotal")
+}
+
+union OneAdvert @union(resolveType: "App\\GraphQL\\Unions\\OneAdvert")
+    = Advert
+    | GuestAdvert

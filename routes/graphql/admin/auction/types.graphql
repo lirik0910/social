@@ -1,0 +1,17 @@
+type AllUsersAuctionsPayload {
+    "Selection`s results"
+    results: [Auction]
+    "Selection`s results count"
+    total(data: AllUsersAuctionsFilterInput): Int @field(resolver: "App\\GraphQL\\Queries\\Admin\\Auction\\AllUsersAuctions@getTotal")
+}
+
+enum AUCTIONS_ORDER_BY_COLUMN {
+    "Auction`s created date"
+    CREATED_DATE @enum(value: "auctions.created_at")
+    "Time to auction`s end"
+    TIME_TO_END @enum(value: "auctions.end_at")
+    "Auction`s latest bid value"
+    LATEST_BID @enum(value: "auction_bids.value")
+    "Auction`s participants count"
+    PARTICIPANTS @enum(value: "auctions.participants")
+}

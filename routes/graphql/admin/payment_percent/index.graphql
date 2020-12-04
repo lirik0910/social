@@ -1,0 +1,15 @@
+#import ./types.graphql
+#import ./inputs.graphql
+
+# Admin area
+extend type Query @middleware(checks: ["auth:api", "admin:moderator"]) @namespace(field: "App\\GraphQL\\Queries\\Admin\\PaymentPercent") {
+    "All payment percents"
+    allPaymentPercents(data: PaymentPercents): PaymentPercentsPayload @field(resolver: "PaymentPercents@resolve")
+}
+extend type Mutation @middleware(checks: ["auth:api", "admin:moderator"]) @namespace(field: "App\\GraphQL\\Mutations\\Admin\\PaymentPercent") {
+   # createPaymentPercent(data: PaymentPercentInput): PaymentPercent @field(resolver: "CreatePaymentPercent@resolve")
+    "Edit payment percent"
+    editPaymentPercent(data: EditPaymentPercentInput): PaymentPercent @field(resolver: "EditPaymentPercent@resolve")
+    "Delete payment percent"
+    deletePaymentPercent(id: ID!): PaymentPercent @field(resolver: "DeletePaymentPercent@resolve")
+}

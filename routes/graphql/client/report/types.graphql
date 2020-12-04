@@ -1,0 +1,40 @@
+type Report {
+    id: ID
+    "Report`s reason value (from settings)"
+    reason: Int
+    "Report`s moderation`s value"
+    moderation_reason: Int
+    "Report`s status value (from settings)"
+    status: Int
+    "Reported ID"
+    reported_id: ID
+    "Reported type"
+    reported_type: ReportedType
+    "Reported user id"
+    reported_user_id: ID
+    "User who create report"
+    author: ListUser! @belongsTo
+    "Reported user"
+    reported_user: ListUser @belongsTo
+    "Reported"
+    reported: Reported @morphTo
+    created_at: IsoDateTime
+    updated_at: IsoDateTime
+}
+
+enum ReportedType {
+    users @enum(value: "users")
+    media @enum(value: "media")
+    meetings @enum(value: "meetings")
+    auctions @enum(value: "auctions")
+    adverts @enum(value: "adverts")
+    chat_rooms @enum(value: "privateChatRooms")
+}
+
+union Reported @union(resolveType: "App\\GraphQL\\Unions\\ReportedType")
+    = ListUser
+    | Meeting
+    | GuestMedia
+    | GuestAuction
+    | ChatRoom
+    | GuestAdvert

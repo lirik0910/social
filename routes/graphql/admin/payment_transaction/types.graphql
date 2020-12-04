@@ -1,0 +1,27 @@
+type AdminPaymentTransaction {
+    id: ID
+    "Changed user`s ID"
+    user_id: ID
+    "Moderator/admin ID"
+    admin_id: ID
+    "Amount of credits"
+    amount: Int
+    "Transaction`s type (from settings)"
+    type: Int
+    created_at: IsoDateTime
+    updated_at: IsoDateTime
+    user: UserForAdminPanel @belongsTo
+    admin: UserForAdminPanel @belongsto
+}
+
+type AllPaymentTransactionsPayload {
+    results: [Payments]
+    total(data: AllPaymentTransactionsFilterInput): Int @field(resolver: "App\\GraphQL\\Queries\\Admin\\PaymentTransaction\\AllPaymentTransactions@getTotal")
+}
+
+enum PAYMENT_TRANSACTIONS_ORDER_BY_COLUMN {
+    "Sorting by updated date"
+    UPDATED_DATE @enum(value: "updated_at")
+    "Sorting by credits amount"
+    AMOUNT @enum(value: "amount")
+}

@@ -1,0 +1,4 @@
+enum ORDER_DIR {
+    ASC @enum(value: "ASC")
+    DESC @enum(value: "DESC")
+}
